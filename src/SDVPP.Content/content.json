@@ -1,6 +1,38 @@
 {
   "$schema": "https://smapi.io/schemas/content-patcher.json",
   "Format": "2.0.0",
-  "ConfigSchema": {},
-  "Changes": []
+  "ConfigSchema": {
+    "NextSeasonSeeds": {
+      "AllowValues": "true, false",
+      "Default": "true"
+    },
+    "SprinklerUpgradeRecipes": {
+      "AllowValues": "true, false",
+      "Default": "true"
+    },
+    "SiloUpgrades": {
+      "AllowValues": "true, false",
+      "Default": "true"
+    }
+  },
+  "Changes": [
+    {
+      "LogName": "Next season's seeds on day 28",
+      "Action": "Include",
+      "FromFile": "data/seeds.json",
+      "When": { "NextSeasonSeeds": true }
+    },
+    {
+      "LogName": "Sprinkler upgrade recipes",
+      "Action": "Include",
+      "FromFile": "data/sprinklers.json",
+      "When": { "SprinklerUpgradeRecipes": true }
+    },
+    {
+      "LogName": "Silo upgrades",
+      "Action": "Include",
+      "FromFile": "data/silos.json",
+      "When": { "SiloUpgrades": true }
+    }
+  ]
 }

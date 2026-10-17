@@ -1,3 +1,20 @@
 {
-  "loaded": "SDV++ loaded."
+  "loaded": "SDV++ loaded.",
+
+  "config.SprinklersFillPetBowl.name": "Sprinklers fill the pet bowl",
+  "config.SprinklersFillPetBowl.tooltip": "Each morning, a sprinkler that reaches the pet bowl's water fills it. In co-op, the host's setting applies.",
+
+  "config.ConfirmWarpTotems.name": "Confirm warp totems",
+  "config.ConfirmWarpTotems.tooltip": "Ask before a warp totem sends you away.",
+  "config.ConfirmReturnScepter.name": "Confirm Return Scepter",
+  "config.ConfirmReturnScepter.tooltip": "Ask before the Return Scepter sends you home.",
+  "warpConfirm.totem": "Use the {{item}}?",
+  "warpConfirm.scepter": "Return home with the {{item}}?",
+
+  "config.DecoratingTimeFreeze.name": "Time freeze while decorating",
+  "config.DecoratingTimeFreeze.tooltip": "Stop the clock inside the farmhouse or a cabin. In co-op, the host's setting applies and every player must qualify.",
+  "config.DecoratingTimeFreeze.Off": "Off",
+  "config.DecoratingTimeFreeze.HoldingFurniture": "While holding furniture",
+  "config.DecoratingTimeFreeze.AnywhereAtHome": "Always at home",
+  "decorFreeze.started": "Time stands still while you decorate."
 }

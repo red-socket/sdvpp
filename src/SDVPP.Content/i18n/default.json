@@ -1,1 +1,16 @@
-{}
+{
+  "config.NextSeasonSeeds.name": "Next season's seeds on day 28",
+  "config.NextSeasonSeeds.description": "On the last day of spring, summer and fall, Pierre and JojaMart also sell the next season's seeds.",
+
+  "config.SprinklerUpgradeRecipes.name": "Sprinkler upgrade recipes",
+  "config.SprinklerUpgradeRecipes.description": "Craft a Quality Sprinkler from a Sprinkler, and an Iridium Sprinkler from a Quality Sprinkler. Note: each recipe you know counts toward Craft Master and Perfection.",
+  "recipe.qualitySprinklerUpgrade": "Quality Sprinkler (Upgrade)",
+  "recipe.iridiumSprinklerUpgrade": "Iridium Sprinkler (Upgrade)",
+
+  "config.SiloUpgrades.name": "Silo upgrades",
+  "config.SiloUpgrades.description": "Robin can upgrade a Silo to a Big Silo (500 hay), then to a Deluxe Silo (750 hay). Turning this off with upgraded silos on the farm leaves them without data.",
+  "building.bigSilo.name": "Big Silo",
+  "building.bigSilo.description": "A sturdier silo that stores up to 500 pieces of hay.",
+  "building.deluxeSilo.name": "Deluxe Silo",
+  "building.deluxeSilo.description": "A reinforced silo that stores up to 750 pieces of hay."
+}

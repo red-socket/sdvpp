@@ -12,3 +12,5 @@ obj/
 # Release zips
 /release/
 
+# Player config Content Patcher writes into the symlinked content pack
+/src/SDVPP.Content/config.json

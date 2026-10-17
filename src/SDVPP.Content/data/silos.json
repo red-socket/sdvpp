@@ -1,0 +1,50 @@
+{
+  "Changes": [
+    {
+      "LogName": "Silo upgrades",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Entries": {
+        // same footprint and behavior as the vanilla silo; reuses its texture until there is art
+        "{{ModId}}_BigSilo": {
+          "Name": "{{i18n: building.bigSilo.name}}",
+          "NameForGeneralType": "[LocalizedText Strings\\Buildings:Silo_Name]",
+          "Description": "{{i18n: building.bigSilo.description}}",
+          "Texture": "Buildings\\Silo",
+          "UpgradeSignTile": "1, 2",
+          "UpgradeSignHeight": 16.0,
+          "Size": { "X": 3, "Y": 3 },
+          "BuildDays": 2,
+          "BuildCost": 2500,
+          "BuildMaterials": [
+            { "ItemId": "(O)390", "Amount": 200 },
+            { "ItemId": "(O)330", "Amount": 20 },
+            { "ItemId": "(O)335", "Amount": 5 }
+          ],
+          "BuildingToUpgrade": "Silo",
+          "HayCapacity": 500,
+          "DefaultAction": "BuildingSilo"
+        },
+        "{{ModId}}_DeluxeSilo": {
+          "Name": "{{i18n: building.deluxeSilo.name}}",
+          "NameForGeneralType": "[LocalizedText Strings\\Buildings:Silo_Name]",
+          "Description": "{{i18n: building.deluxeSilo.description}}",
+          "Texture": "Buildings\\Silo",
+          "UpgradeSignTile": "1, 2",
+          "UpgradeSignHeight": 16.0,
+          "Size": { "X": 3, "Y": 3 },
+          "BuildDays": 2,
+          "BuildCost": 7500,
+          "BuildMaterials": [
+            { "ItemId": "(O)390", "Amount": 300 },
+            { "ItemId": "(O)336", "Amount": 10 },
+            { "ItemId": "(O)338", "Amount": 5 }
+          ],
+          "BuildingToUpgrade": "{{ModId}}_BigSilo",
+          "HayCapacity": 750,
+          "DefaultAction": "BuildingSilo"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "Changes": [
+    {
+      "LogName": "SeedShop: next season seeds on day 28",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "SeedShop",
+        "Items"
+      ],
+      "Fields": {
+        "(O)472": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)473": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)474": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)475": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)427": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)477": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)429": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)476": {
+          "Condition": "ANY \"SEASON spring, YEAR 2\" \"SEASON_DAY winter 28\""
+        },
+        "(O)273": {
+          "Condition": "ANY \"SEASON spring, YEAR 2\" \"SEASON_DAY winter 28\""
+        },
+        "(O)479": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)480": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)481": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)482": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "WheatSeeds_Summer": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)484": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)453": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)455": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)302": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "CornSeeds_Summer": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "SunflowerSeeds_Summer": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)485": {
+          "Condition": "ANY \"SEASON summer, YEAR 2\" \"SEASON_DAY spring 28, YEAR 2\""
+        },
+        "(O)490": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)488": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)491": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)492": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)493": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)425": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)299": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)301": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)489": {
+          "Condition": "ANY \"SEASON fall, YEAR 2\" \"SEASON_DAY summer 28, YEAR 2\""
+        }
+      }
+    },
+    {
+      "LogName": "Joja: next season seeds on day 28",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Joja",
+        "Items"
+      ],
+      "Fields": {
+        "(O)472": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)473": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)474": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)475": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)427": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)429": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)477": {
+          "Condition": "ANY \"SEASON spring\" \"SEASON_DAY winter 28\""
+        },
+        "(O)480": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)482": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "WheatSeeds_Summer": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)484": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)479": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)302": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)453": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)455": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "SunflowerSeeds_Summer": {
+          "Condition": "ANY \"SEASON summer\" \"SEASON_DAY spring 28\""
+        },
+        "(O)487": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)488": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)490": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)299": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)301": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)492": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)491": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)493": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        },
+        "(O)425": {
+          "Condition": "ANY \"SEASON fall\" \"SEASON_DAY summer 28\""
+        }
+      }
+    }
+  ]
+}

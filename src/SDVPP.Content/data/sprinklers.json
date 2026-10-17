@@ -1,0 +1,14 @@
+{
+  "Changes": [
+    {
+      "LogName": "Sprinkler upgrade recipes",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        // the previous sprinkler replaces the cheapest bar of the vanilla recipe
+        "{{ModId}}_QualitySprinklerUpgrade": "599 1 336 1 338 1/Home/621/false/s Farming 6/{{i18n: recipe.qualitySprinklerUpgrade}}",
+        "{{ModId}}_IridiumSprinklerUpgrade": "621 1 337 1 787 1/Home/645/false/s Farming 9/{{i18n: recipe.iridiumSprinklerUpgrade}}"
+      }
+    }
+  ]
+}
