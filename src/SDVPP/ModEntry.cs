@@ -22,6 +22,10 @@ internal sealed class ModEntry : Mod
         _ = new WeddingReminder(helper, this.Monitor, () => this.config);
         _ = new WoodShelter(helper, this.Monitor, () => this.config);
         _ = new TackleStacking(this.Monitor, () => this.config, harmony);
+        _ = new FastTitle(helper, () => this.config);
+        _ = new UiScale(helper, () => this.config, harmony);
+        _ = new KeyboardMenus(helper, () => this.config);
+        _ = new FastFades(helper, () => this.config);
 
         helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
     }
@@ -92,10 +96,65 @@ internal sealed class ModEntry : Mod
         );
         gmcm.AddBoolOption(
             this.ModManifest,
+            getValue: () => this.config.CraftWithShelterWood,
+            setValue: value => this.config.CraftWithShelterWood = value,
+            name: () => t.Get("config.CraftWithShelterWood.name"),
+            tooltip: () => t.Get("config.CraftWithShelterWood.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
             getValue: () => this.config.StackUnusedTackle,
             setValue: value => this.config.StackUnusedTackle = value,
             name: () => t.Get("config.StackUnusedTackle.name"),
             tooltip: () => t.Get("config.StackUnusedTackle.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.FastTitleScreen,
+            setValue: value => this.config.FastTitleScreen = value,
+            name: () => t.Get("config.FastTitleScreen.name"),
+            tooltip: () => t.Get("config.FastTitleScreen.tooltip")
+        );
+        gmcm.AddTextOption(
+            this.ModManifest,
+            getValue: () => this.config.TitleSlideMilliseconds.ToString(),
+            setValue: value => this.config.TitleSlideMilliseconds = int.Parse(value),
+            name: () => t.Get("config.TitleSlideMilliseconds.name"),
+            tooltip: () => t.Get("config.TitleSlideMilliseconds.tooltip"),
+            allowedValues: new[] { "0", "400", "700", "1000" },
+            formatAllowedValue: value => value == "0" ? t.Get("config.TitleSlideMilliseconds.vanilla") : t.Get("config.TitleSlideMilliseconds.ms", new { ms = value })
+        );
+        gmcm.AddTextOption(
+            this.ModManifest,
+            getValue: () => this.config.TitleUiScale.ToString(),
+            setValue: value => this.config.TitleUiScale = int.Parse(value),
+            name: () => t.Get("config.TitleUiScale.name"),
+            tooltip: () => t.Get("config.TitleUiScale.tooltip"),
+            allowedValues: new[] { "0", "100", "125", "150", "175", "200" },
+            formatAllowedValue: value => value == "0" ? t.Get("config.TitleUiScale.auto") : value + "%"
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.ExtendedScaleRanges,
+            setValue: value => this.config.ExtendedScaleRanges = value,
+            name: () => t.Get("config.ExtendedScaleRanges.name"),
+            tooltip: () => t.Get("config.ExtendedScaleRanges.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.KeyboardMenus,
+            setValue: value => this.config.KeyboardMenus = value,
+            name: () => t.Get("config.KeyboardMenus.name"),
+            tooltip: () => t.Get("config.KeyboardMenus.tooltip")
+        );
+        gmcm.AddTextOption(
+            this.ModManifest,
+            getValue: () => this.config.FadeSpeed.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture),
+            setValue: value => this.config.FadeSpeed = float.Parse(value, System.Globalization.CultureInfo.InvariantCulture),
+            name: () => t.Get("config.FadeSpeed.name"),
+            tooltip: () => t.Get("config.FadeSpeed.tooltip"),
+            allowedValues: new[] { "1", "1.5", "2", "3" },
+            formatAllowedValue: value => value == "1" ? t.Get("config.FadeSpeed.vanilla") : t.Get("config.FadeSpeed.times", new { speed = value })
         );
     }
 }

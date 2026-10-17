@@ -2,7 +2,7 @@
   "$schema": "https://smapi.io/schemas/manifest.json",
   "Name": "SDV++ (Content)",
   "Author": "Luke",
-  "Version": "0.3.0",
+  "Version": "0.4.0",
   "Description": "Content Patcher pack: dialogue, events, maps, lore, and data edits.",
   "UniqueID": "Luke.SDVPP.Content",
   "ContentPackFor": {

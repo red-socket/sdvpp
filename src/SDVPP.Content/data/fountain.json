@@ -1,0 +1,30 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fountain refills the watering can",
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      // the fountain's edge tiles (its 5x4 footprint is x 24-28, y 25-28), the ones a player facing it targets;
+      // fishing there is also off in winter
+      "When": {
+        "Season": "spring, summer, fall"
+      },
+      "MapTiles": [
+        { "Position": { "X": 24, "Y": 25 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 25, "Y": 25 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 26, "Y": 25 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 27, "Y": 25 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 28, "Y": 25 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 24, "Y": 28 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 25, "Y": 28 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 26, "Y": 28 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 27, "Y": 28 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 28, "Y": 28 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 24, "Y": 26 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 24, "Y": 27 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 28, "Y": 26 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } },
+        { "Position": { "X": 28, "Y": 27 }, "Layer": "Back", "SetProperties": { "WaterSource": "T" } }
+      ]
+    }
+  ]
+}

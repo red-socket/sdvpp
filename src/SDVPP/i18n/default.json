@@ -27,5 +27,29 @@
   "woodShelter.inUse": "Someone else is using the wood shelter.",
 
   "config.StackUnusedTackle.name": "Stack unused tackle",
-  "config.StackUnusedTackle.tooltip": "Unused fishing tackle stacks in your backpack and chests. Worn tackle doesn't. In co-op, every player should use the same setting."
+  "config.StackUnusedTackle.tooltip": "Unused fishing tackle stacks in your backpack and chests. Worn tackle doesn't. In co-op, every player should use the same setting.",
+
+  "config.FastTitleScreen.name": "Fast title screen",
+  "config.FastTitleScreen.tooltip": "Skip the intro, show the title buttons at once, and shorten the fade after picking a save.",
+  "config.TitleSlideMilliseconds.name": "Title slide duration",
+  "config.TitleSlideMilliseconds.tooltip": "How long the slide to New, Load and Co-op takes. Vanilla's gets slower the wider your screen.",
+  "config.TitleSlideMilliseconds.vanilla": "Vanilla",
+  "config.TitleSlideMilliseconds.ms": "{{ms}} ms",
+
+  "config.TitleUiScale.name": "Title screen UI scale",
+  "config.TitleUiScale.tooltip": "The UI scale used on the title, load, co-op and character creation menus. The game always uses 100% there.",
+  "config.TitleUiScale.auto": "Same as in game",
+  "config.ExtendedScaleRanges.name": "Larger UI scale and zoom",
+  "config.ExtendedScaleRanges.tooltip": "In the game options, allow UI scales up to what still fits your screen, and zoom up to 250%.",
+
+  "config.KeyboardMenus.name": "Keyboard menu controls",
+  "config.KeyboardMenus.tooltip": "Arrow keys move through menus, Enter or Space clicks, Backspace right-clicks, number keys answer questions, and Escape goes back on the title screen.",
+
+  "config.FadeSpeed.name": "Location fade speed",
+  "config.FadeSpeed.tooltip": "How fast the screen fades to and from black when you walk between locations. Sleeping and cutscenes are not affected.",
+  "config.FadeSpeed.vanilla": "Vanilla",
+  "config.FadeSpeed.times": "{{speed}}x",
+
+  "config.CraftWithShelterWood.name": "Craft with shelter wood",
+  "config.CraftWithShelterWood.tooltip": "When crafting on the farm or in a farmhouse, Wood and Hardwood in the wood shelter count as ingredients."
 }

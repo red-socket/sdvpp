@@ -25,6 +25,7 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 - Craft a Quality Sprinkler from a Sprinkler (Farming 6), and an Iridium Sprinkler from a Quality Sprinkler (Farming 9). (`SprinklerUpgradeRecipes`, content pack)
 - Robin can upgrade a Silo to a Big Silo that holds 500 hay, then to a Deluxe Silo that holds 750. (`SiloUpgrades`, content pack)
 - A sprinkler that reaches the pet bowl's water fills it every morning. (`SprinklersFillPetBowl`, host's setting)
+- You can refill your watering can at the Pelican Town fountain, except in winter. (`FountainWater`, content pack)
 
 ### Villagers
 
@@ -34,6 +35,7 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 
 - The log pile next to the farmhouse door stores Wood and Hardwood. The whole farm shares it, and one player can use it at a time. (`WoodShelterStorage`)
 - Unused fishing tackle stacks. A fishing rod still takes one per slot. (`StackUnusedTackle`; every player should use the same setting)
+- When you craft on the farm or in a farmhouse, Wood and Hardwood in the log pile count as ingredients. (`CraftWithShelterWood`)
 
 ### Fewer accidents
 
@@ -47,6 +49,14 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 
 - Minecart stops in Cindersap Forest, near the farm, and on the Beach, at the end of the path from town. They join the existing network after the Boiler Room is repaired. (`MinecartStops`, content pack)
 
+### Interface
+
+- The title screen skips the intro and shows its buttons right away. The slide to New, Load and Co-op takes 700 ms; change it with `TitleSlideMilliseconds` (0 keeps the game's speed). (`FastTitleScreen`)
+- The title, load, co-op and character creation screens use your in-game UI scale instead of 100%. Set `TitleUiScale` to a percentage to override it.
+- The options menu offers UI scales up to the largest that fits your screen (200% at 2560x1440) and zoom up to 250%. (`ExtendedScaleRanges`)
+- Menus work with the keyboard: arrow keys move, Enter or Space clicks, Backspace right-clicks, number keys pick an answer to a question, and Escape goes back on the title screen. (`KeyboardMenus`)
+- The fade between locations is twice as fast. Sleeping and cutscenes keep their usual pace. (`FadeSpeed`, 1 for the game's speed)
+
 ## Known limitations
 
 - Each sprinkler upgrade recipe you know counts toward Craft Master and Perfection, so you need to craft each one once.
@@ -55,6 +65,8 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 - Wood in the log pile doesn't count for Robin's buildings, and chopped wood isn't stored there automatically. After the second farmhouse upgrade the log pile is drawn as part of the porch, but it still works.
 - The new minecart stops have no steam puff.
 - If you remove SDV++, stacks of tackle shrink to one item the next time the game moves them, and the rest are lost.
+- The zoom buttons next to the clock still stop at 200%. Use the options menu for higher zoom.
+- Crafting with log pile wood works only on the farm or in a farmhouse or cabin, and not for cooking. While someone crafts there, other players see the log pile as in use.
 
 ## Building from source
 

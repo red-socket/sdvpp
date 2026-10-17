@@ -17,6 +17,10 @@
     "MinecartStops": {
       "AllowValues": "true, false",
       "Default": "true"
+    },
+    "FountainWater": {
+      "AllowValues": "true, false",
+      "Default": "true"
     }
   },
   "Changes": [
@@ -53,6 +57,12 @@
       "Action": "Include",
       "FromFile": "data/minecarts.json",
       "When": { "MinecartStops": true }
+    },
+    {
+      "LogName": "Fountain water",
+      "Action": "Include",
+      "FromFile": "data/fountain.json",
+      "When": { "FountainWater": true }
     }
   ]
 }

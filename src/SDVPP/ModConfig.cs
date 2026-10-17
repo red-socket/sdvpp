@@ -23,6 +23,27 @@ internal sealed class ModConfig
     /// <summary>The wood shelter beside the farmhouse door stores Wood and Hardwood. Each player's own setting applies.</summary>
     public bool WoodShelterStorage { get; set; } = true;
 
+    /// <summary>When crafting at home, ingredients can come from the wood shelter. Each player's own setting applies.</summary>
+    public bool CraftWithShelterWood { get; set; } = true;
+
     /// <summary>Unused fishing tackle stacks. Every player in co-op should have the same setting.</summary>
     public bool StackUnusedTackle { get; set; } = true;
+
+    /// <summary>Skip the title screen intro and speed up its transitions.</summary>
+    public bool FastTitleScreen { get; set; } = true;
+
+    /// <summary>How long the title screen's slide to New, Load and Co-op takes, in milliseconds; 0 keeps vanilla (1 px per ms, about 1.7 s at 2560 px and 150% UI).</summary>
+    public int TitleSlideMilliseconds { get; set; } = 700;
+
+    /// <summary>UI scale on the title screen, in percent; 0 uses your in-game UI scale (vanilla is always 100%).</summary>
+    public int TitleUiScale { get; set; } = 0;
+
+    /// <summary>Offer UI scales up to what fits the screen, and zoom up to 250%.</summary>
+    public bool ExtendedScaleRanges { get; set; } = true;
+
+    /// <summary>Arrow keys, Enter, Space and Backspace control menus; number keys answer questions; Escape leaves title sub-menus.</summary>
+    public bool KeyboardMenus { get; set; } = true;
+
+    /// <summary>How fast the fade between locations runs compared to vanilla; 1 keeps vanilla.</summary>
+    public float FadeSpeed { get; set; } = 2f;
 }

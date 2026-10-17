@@ -19,5 +19,8 @@
   "config.MinecartStops.name": "Minecart stops at the Forest and Beach",
   "config.MinecartStops.description": "Adds minecart stops in Cindersap Forest (near the farm) and on the Beach (at the end of the path from town). Uses the same network as the other carts, opened by the Boiler Room.",
   "minecart.forest": "Forest",
-  "minecart.beach": "Beach"
+  "minecart.beach": "Beach",
+
+  "config.FountainWater.name": "Fill the watering can at the town fountain",
+  "config.FountainWater.description": "The fountain in Pelican Town refills your watering can, except in winter."
 }
