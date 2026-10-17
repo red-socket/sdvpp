@@ -16,5 +16,16 @@
   "config.DecoratingTimeFreeze.Off": "Off",
   "config.DecoratingTimeFreeze.HoldingFurniture": "While holding furniture",
   "config.DecoratingTimeFreeze.AnywhereAtHome": "Always at home",
-  "decorFreeze.started": "Time stands still while you decorate."
+  "decorFreeze.started": "Time stands still while you decorate.",
+
+  "config.WeddingReminder.name": "Wedding reminder",
+  "config.WeddingReminder.tooltip": "Get a letter on the day before your wedding.",
+  "weddingReminder.hud": "Your wedding is tomorrow morning!",
+
+  "config.WoodShelterStorage.name": "Wood shelter storage",
+  "config.WoodShelterStorage.tooltip": "The log pile beside the farmhouse door stores Wood and Hardwood, shared by all players.",
+  "woodShelter.inUse": "Someone else is using the wood shelter.",
+
+  "config.StackUnusedTackle.name": "Stack unused tackle",
+  "config.StackUnusedTackle.tooltip": "Unused fishing tackle stacks in your backpack and chests. Worn tackle doesn't. In co-op, every player should use the same setting."
 }

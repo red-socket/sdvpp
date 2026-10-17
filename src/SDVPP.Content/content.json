@@ -13,9 +13,23 @@
     "SiloUpgrades": {
       "AllowValues": "true, false",
       "Default": "true"
+    },
+    "MinecartStops": {
+      "AllowValues": "true, false",
+      "Default": "true"
     }
   },
   "Changes": [
+    {
+      "LogName": "Letters",
+      "Action": "Include",
+      "FromFile": "data/mail.json"
+    },
+    {
+      "LogName": "Wood shelter action",
+      "Action": "Include",
+      "FromFile": "data/woodshelter.json"
+    },
     {
       "LogName": "Next season's seeds on day 28",
       "Action": "Include",
@@ -33,6 +47,12 @@
       "Action": "Include",
       "FromFile": "data/silos.json",
       "When": { "SiloUpgrades": true }
+    },
+    {
+      "LogName": "Minecart stops",
+      "Action": "Include",
+      "FromFile": "data/minecarts.json",
+      "When": { "MinecartStops": true }
     }
   ]
 }

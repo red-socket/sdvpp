@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minecart stop for the Beach, patched in at tile (40, 0): a track runs down the east edge of the path from town to
+     the cart. The Beach map has no outdoors tilesheet, so this fragment brings the game's own (resolved from
+     Content/Maps, not shipped). Tile ids are the vanilla outdoors indices + 1: cart top 933 (Front), cart body and
+     engine 958/1080/1081 (Buildings), and the Quarry cart's rails on a dirt bed, 578 with the 458 bumper on the arrival
+     tile (Back); every rail tile has a ground background, and this one suits sand best. -->
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="3" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="4">
+  <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+    <image source="spring_outdoorsTileSheet" width="400" height="1264" />
+  </tileset>
+  <layer id="1" name="Back" width="3" height="8">
+    <data encoding="csv">
+579,0,0,
+579,0,0,
+579,0,0,
+579,0,0,
+579,0,0,
+579,0,0,
+579,0,0,
+459,0,0
+</data>
+  </layer>
+  <layer id="2" name="Buildings" width="3" height="8">
+    <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+959,1081,1082,
+0,0,0
+</data>
+  </layer>
+  <layer id="3" name="Front" width="3" height="8">
+    <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+934,0,0,
+0,0,0,
+0,0,0
+</data>
+  </layer>
+  <objectgroup id="4" name="Buildings" visible="false" locked="false">
+    <object id="1" name="TileData" x="0" y="96" width="16" height="16" rotation="0">
+      <properties>
+        <property name="Action" type="string" value="MinecartTransport Default Luke.SDVPP.Content_Beach" />
+      </properties>
+    </object>
+    <object id="2" name="TileData" x="16" y="96" width="16" height="16" rotation="0">
+      <properties>
+        <property name="Action" type="string" value="MinecartTransport Default Luke.SDVPP.Content_Beach" />
+      </properties>
+    </object>
+    <object id="3" name="TileData" x="32" y="96" width="16" height="16" rotation="0">
+      <properties>
+        <property name="Action" type="string" value="MinecartTransport Default Luke.SDVPP.Content_Beach" />
+      </properties>
+    </object>
+  </objectgroup>
+</map>

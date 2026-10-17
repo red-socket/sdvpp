@@ -12,5 +12,12 @@
   "building.bigSilo.name": "Big Silo",
   "building.bigSilo.description": "A sturdier silo that stores up to 500 pieces of hay.",
   "building.deluxeSilo.name": "Deluxe Silo",
-  "building.deluxeSilo.description": "A reinforced silo that stores up to 750 pieces of hay."
+  "building.deluxeSilo.description": "A reinforced silo that stores up to 750 pieces of hay.",
+
+  "mail.weddingTomorrow": "Dear @,^^Your wedding is tomorrow! The ceremony begins as soon as you wake up, so whatever you're wearing when you go to bed tonight is what you'll be married in.^^Everyone in town is looking forward to it.^^   -Mayor Lewis[#]Your Wedding Day",
+
+  "config.MinecartStops.name": "Minecart stops at the Forest and Beach",
+  "config.MinecartStops.description": "Adds minecart stops in Cindersap Forest (near the farm) and on the Beach (at the end of the path from town). Uses the same network as the other carts, opened by the Boiler Room.",
+  "minecart.forest": "Forest",
+  "minecart.beach": "Beach"
 }

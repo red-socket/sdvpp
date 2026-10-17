@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>SDVPP</AssemblyName>
     <RootNamespace>SDVPP</RootNamespace>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <TargetFramework>net6.0</TargetFramework>
     <EnableHarmony>true</EnableHarmony>
     <Nullable>enable</Nullable>
@@ -15,6 +15,15 @@
 
   <ItemGroup>
     <PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.*" />
+  </ItemGroup>
+
+  <!-- Release: zip the mod together with the content pack, and don't deploy, because the dev content pack is
+       symlinked into Mods and a deployed copy would be a duplicate mod. Debug builds deploy the DLL only. -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <EnableModDeploy>false</EnableModDeploy>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Release'">
+    <ContentPacks Include="../SDVPP.Content" Version="$(Version)" IgnoreModFilePaths="config.json" />
   </ItemGroup>
 
 </Project>

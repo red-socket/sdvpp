@@ -1,0 +1,15 @@
+{
+  "Changes": [
+    {
+      "LogName": "Wood shelter stores wood",
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "TargetField": [ "Farmhouse", "ActionTiles" ],
+      "Fields": {
+        // the log pile left of the farmhouse door; the C# mod handles the action (and keeps the Club Card step)
+        "Default_GetClubCard_Left": { "Action": "Luke.SDVPP_WoodShelter" },
+        "Default_GetClubCard_Right": { "Action": "Luke.SDVPP_WoodShelter" }
+      }
+    }
+  ]
+}

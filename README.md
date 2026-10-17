@@ -26,6 +26,15 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 - Robin can upgrade a Silo to a Big Silo that holds 500 hay, then to a Deluxe Silo that holds 750. (`SiloUpgrades`, content pack)
 - A sprinkler that reaches the pet bowl's water fills it every morning. (`SprinklersFillPetBowl`, host's setting)
 
+### Villagers
+
+- Mayor Lewis sends a letter the day before your wedding. The ceremony starts as soon as you wake up, so this is your chance to change clothes. (`WeddingReminder`)
+
+### Storage
+
+- The log pile next to the farmhouse door stores Wood and Hardwood. The whole farm shares it, and one player can use it at a time. (`WoodShelterStorage`)
+- Unused fishing tackle stacks. A fishing rod still takes one per slot. (`StackUnusedTackle`; every player should use the same setting)
+
 ### Fewer accidents
 
 - The game asks before a warp totem or the Return Scepter sends you away. (`ConfirmWarpTotems`, `ConfirmReturnScepter`)
@@ -34,11 +43,18 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 
 - Time stops at home while you hold a piece of furniture, so you can decorate without losing the day. Set `DecoratingTimeFreeze` to `HoldingFurniture` (default), `AnywhereAtHome` or `Off`. In co-op the host's setting applies, and the clock only stops when every player is decorating at home.
 
+### Travel
+
+- Minecart stops in Cindersap Forest, near the farm, and on the Beach, at the end of the path from town. They join the existing network after the Boiler Room is repaired. (`MinecartStops`, content pack)
+
 ## Known limitations
 
 - Each sprinkler upgrade recipe you know counts toward Craft Master and Perfection, so you need to craft each one once.
 - Big and Deluxe Silos look like a regular silo.
 - Turning off `SiloUpgrades` or removing SDV++ leaves upgraded silos without building data.
+- Wood in the log pile doesn't count for Robin's buildings, and chopped wood isn't stored there automatically. After the second farmhouse upgrade the log pile is drawn as part of the porch, but it still works.
+- The new minecart stops have no steam puff.
+- If you remove SDV++, stacks of tackle shrink to one item the next time the game moves them, and the rest are lost.
 
 ## Building from source
 

@@ -1,0 +1,75 @@
+{
+  "Changes": [
+    {
+      "LogName": "Minecart destinations",
+      "Action": "EditData",
+      "Target": "Data/Minecarts",
+      "TargetField": [ "Default", "Destinations" ],
+      "Entries": {
+        // arrive on the tile below the cart, like the vanilla stops
+        "{{ModId}}_Forest": {
+          "Id": "{{ModId}}_Forest",
+          "DisplayName": "{{i18n: minecart.forest}}",
+          "TargetLocation": "Forest",
+          "TargetTile": { "X": 75, "Y": 9 },
+          "TargetDirection": "down"
+        },
+        "{{ModId}}_Beach": {
+          "Id": "{{ModId}}_Beach",
+          "DisplayName": "{{i18n: minecart.beach}}",
+          "TargetLocation": "Beach",
+          "TargetTile": { "X": 40, "Y": 7 },
+          "TargetDirection": "down"
+        }
+      }
+    },
+    {
+      "LogName": "Forest minecart",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      // grass east of the path from the farm, clear of the large bush at (72-74, 10); the Forest map already has
+      // the outdoors tilesheet. Rails (1076) come out from under the cliff and end in a bumper (1075) on the arrival
+      // tile, like the Bus Stop cart.
+      "MapTiles": [
+        { "Position": { "X": 75, "Y": 6 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1076 },
+        { "Position": { "X": 75, "Y": 7 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1076 },
+        { "Position": { "X": 75, "Y": 8 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1076 },
+        {
+          "Position": { "X": 75, "Y": 9 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1075,
+          // keep forage and artifact spots off the arrival tile
+          "SetProperties": { "NoSpawn": "All" }
+        },
+        { "Position": { "X": 75, "Y": 7 }, "Layer": "Front", "SetTilesheet": "outdoors", "SetIndex": 933 },
+        {
+          "Position": { "X": 75, "Y": 8 }, "Layer": "Buildings", "SetTilesheet": "outdoors", "SetIndex": 958,
+          "SetProperties": { "Action": "MinecartTransport Default {{ModId}}_Forest" }
+        },
+        {
+          "Position": { "X": 76, "Y": 8 }, "Layer": "Buildings", "SetTilesheet": "outdoors", "SetIndex": 1080,
+          "SetProperties": { "Action": "MinecartTransport Default {{ModId}}_Forest" }
+        },
+        {
+          "Position": { "X": 77, "Y": 8 }, "Layer": "Buildings", "SetTilesheet": "outdoors", "SetIndex": 1081,
+          "SetProperties": { "Action": "MinecartTransport Default {{ModId}}_Forest" }
+        }
+      ]
+    },
+    {
+      "LogName": "Beach minecart",
+      "Action": "EditMap",
+      "Target": "Maps/Beach",
+      // a track down the east edge of the path from town, ending in the cart on the sand
+      "FromFile": "assets/beach-minecart.tmx",
+      "ToArea": { "X": 40, "Y": 0, "Width": 3, "Height": 8 },
+      "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Beach minecart arrival",
+      "Action": "EditMap",
+      "Target": "Maps/Beach",
+      "MapTiles": [
+        { "Position": { "X": 40, "Y": 7 }, "Layer": "Back", "SetProperties": { "NoSpawn": "All" } }
+      ]
+    }
+  ]
+}

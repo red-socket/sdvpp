@@ -1,0 +1,13 @@
+{
+  "Changes": [
+    {
+      "LogName": "Letters",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        // sent by the C# mod on the day before the player's wedding
+        "{{ModId}}_WeddingTomorrow": "{{i18n: mail.weddingTomorrow}}"
+      }
+    }
+  ]
+}

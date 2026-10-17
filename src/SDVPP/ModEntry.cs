@@ -19,6 +19,9 @@ internal sealed class ModEntry : Mod
         _ = new PetBowlSprinklers(helper, this.Monitor, () => this.config);
         _ = new WarpConfirm(helper, this.Monitor, () => this.config, harmony);
         _ = new DecorTimeFreeze(helper, this.Monitor, () => this.config);
+        _ = new WeddingReminder(helper, this.Monitor, () => this.config);
+        _ = new WoodShelter(helper, this.Monitor, () => this.config);
+        _ = new TackleStacking(this.Monitor, () => this.config, harmony);
 
         helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
     }
@@ -72,6 +75,27 @@ internal sealed class ModEntry : Mod
             tooltip: () => t.Get("config.DecoratingTimeFreeze.tooltip"),
             allowedValues: Enum.GetNames<DecorFreezeMode>(),
             formatAllowedValue: value => t.Get($"config.DecoratingTimeFreeze.{value}")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.WeddingReminder,
+            setValue: value => this.config.WeddingReminder = value,
+            name: () => t.Get("config.WeddingReminder.name"),
+            tooltip: () => t.Get("config.WeddingReminder.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.WoodShelterStorage,
+            setValue: value => this.config.WoodShelterStorage = value,
+            name: () => t.Get("config.WoodShelterStorage.name"),
+            tooltip: () => t.Get("config.WoodShelterStorage.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.StackUnusedTackle,
+            setValue: value => this.config.StackUnusedTackle = value,
+            name: () => t.Get("config.StackUnusedTackle.name"),
+            tooltip: () => t.Get("config.StackUnusedTackle.tooltip")
         );
     }
 }
