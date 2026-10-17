@@ -1,0 +1,14 @@
+# Build output
+bin/
+obj/
+
+# Editors / OS
+.vs/
+.vscode/
+.idea/
+*.user
+.DS_Store
+
+# Release zips
+/release/
+
