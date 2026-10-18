@@ -1,0 +1,49 @@
+{
+  "config.NextSeasonSeeds.name": "Graines de la saison suivante le 28",
+  "config.NextSeasonSeeds.description": "Le dernier jour du printemps, de l'été et de l'automne, Pierre et le Marché Joja vendent aussi les graines de la saison suivante.",
+
+  "config.SprinklerUpgradeRecipes.name": "Recettes d'amélioration d'arroseur",
+  "config.SprinklerUpgradeRecipes.description": "Fabriquez un arroseur de qualité à partir d'un arroseur, et un arroseur en iridium à partir d'un arroseur de qualité. Remarque : chaque recette connue compte pour Maître artisan et pour la perfection.",
+  "recipe.qualitySprinklerUpgrade": "Arroseur de qualité (amélioration)",
+  "recipe.iridiumSprinklerUpgrade": "Arroseur en iridium (amélioration)",
+
+  "config.SiloUpgrades.name": "Améliorations du silo",
+  "config.SiloUpgrades.description": "Robine peut transformer un silo en grand silo (500 bottes de paille), puis en silo de luxe (750 bottes). Si vous désactivez ceci alors que des silos améliorés sont sur la ferme, ils se retrouvent sans données.",
+  "building.bigSilo.name": "Grand silo",
+  "building.bigSilo.description": "Un silo plus solide qui contient jusqu'à 500 bottes de paille.",
+  "building.deluxeSilo.name": "Silo de luxe",
+  "building.deluxeSilo.description": "Un silo renforcé qui contient jusqu'à 750 bottes de paille.",
+
+  "mail.weddingTomorrow": "${Cher^Chère}$ @,^^Votre mariage a lieu demain ! La cérémonie commence dès votre réveil, alors la tenue que vous porterez en allant vous coucher ce soir sera celle de votre mariage.^^Tout le village a hâte d'y être.^^   -Le Maire Lewis[#]Le jour de votre mariage",
+
+  "config.MinecartStops.name": "Arrêts de wagonnet à la forêt et à la plage",
+  "config.MinecartStops.description": "Ajoute des arrêts de wagonnet dans la Forêt Sève-Cendreuse (près de la ferme) et sur la plage (au bout du chemin qui vient du village). Ils utilisent le même réseau que les autres wagonnets, ouvert par la chaufferie.",
+  "minecart.forest": "Forêt",
+  "minecart.beach": "Plage",
+
+  "config.FountainWater.name": "Remplir l'arrosoir à la fontaine du village",
+  "config.FountainWater.description": "La fontaine de Pélican Ville remplit votre arrosoir, sauf en hiver.",
+
+  "config.SiloPainting.name": "Peindre le silo",
+  "config.SiloPainting.description": "Robine peut peindre les silos, y compris les grands silos et les silos de luxe. Vous pouvez choisir des couleurs différentes pour les murs, le dôme et l'anneau en dessous.",
+
+  "mail.birthdayAsk": "${Cher^Chère}$ @,^^Je tiens un calendrier des anniversaires de chacun près de la boutique de Pierre, pour que le village n'en oublie aucun. Je me suis aperçu que je n'avais pas le vôtre ! Donnez-moi la date et je l'ajouterai.^^   -Le Maire Lewis[#]Pour le calendrier du village",
+  "mail.birthday.Mom": "${Mon chéri^Ma chérie}$ @,^^Joyeux anniversaire ! Je t'ai fait ton gâteau préféré. J'espère que la ferme te réussit et que tu manges correctement.^^Je t'aime, Maman. %item id (O)221 1 %%[#]Joyeux anniversaire de la part de Maman",
+  "mail.birthday.Dad": "@,^^Joyeux anniversaire, ${mon grand^ma grande}$. Je suis fier de toi, d'avoir repris la ferme de Grand-père. Fais-toi plaisir.^^Je t'aime, Papa. %item money 500 501 %%[#]Joyeux anniversaire de la part de Papa",
+  "mail.birthday.Lewis": "@,^^Joyeux anniversaire de la part de toute la mairie ! Votre grand-père serait fier de ce que vous avez fait de la ferme.^^   -Le Maire Lewis %item money 500 501 %%[#]Meilleurs vœux",
+  "mail.birthday.Evelyn": "${Mon cher^Ma chère}$ @,^^Joyeux anniversaire ! Je t'ai fait un gâteau au chocolat. George te salue aussi, à sa façon.^^   -Evelyn %item id (O)220 1 %%[#]Un gâteau pour toi",
+  "mail.birthday.Gus": "@ !^^Joyeux anniversaire ! Voici quelque chose de chaud tout droit de la cuisine du saloon. Passe ce soir, ton premier verre est offert.^^   -Gus %item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 %%[#]De la part du saloon",
+  "mail.birthday.Robin": "Salut @ !^^Joyeux anniversaire ! Il me restait du bon bois dur et j'ai pensé à toi. Si un jour tu veux faire construire quelque chose, fais-moi signe.^^   -Robine %item id (O)709 10 %%[#]Du bois dur pour ton anniversaire",
+  "birthday.greeting.Lewis": "Joyeux anniversaire, @ ! Je l'ai noté moi-même sur le calendrier du village.$h",
+  "birthday.greeting.Evelyn": "Joyeux anniversaire, ${mon chéri^ma chérie}$. Tu me rappelles un peu plus ton grand-père chaque année.$h",
+  "birthday.greeting.Gus": "Tiens, tiens, regardez qui fête son anniversaire ! Passe au saloon ce soir.$h",
+  "birthday.greeting.Robin": "Joyeux anniversaire, @ ! Une année de plus et tu t'occupes toujours de toute cette ferme. Impressionnant !$h",
+  "birthday.greeting.Pierre": "Joyeux anniversaire ! Des graines pour fêter ça ? Je plaisante... à moitié.$h",
+  "birthday.greeting.Marnie": "Joyeux anniversaire, @ ! Même les vaches ont l'air de bonne humeur aujourd'hui.$h",
+  "birthday.greeting.Linus": "Lewis m'a dit que c'était ton anniversaire. La montagne te souhaite le meilleur, et moi aussi.$h",
+  "birthday.greeting.Willy": "Joyeux anniversaire, @. Mon père disait toujours qu'un anniversaire, c'est un bon jour pour lancer sa ligne.$h",
+  "birthday.greeting.Clint": "Oh... euh, joyeux anniversaire. Gus me l'a dit. J'espère que ce sera une bonne journée.",
+  "birthday.greeting.Wizard": "J'ai vu que ce jour marque celui de votre naissance. Je vous souhaite encore bien des années, jeune personne.",
+  "birthday.greeting.Penny": "Joyeux anniversaire, @ ! Jas et Vincent te préparent une carte. Ils n'ont pas encore fini.$h",
+  "birthday.greeting.Vincent": "C'est ton anniversaire ? Tu vas avoir un gâteau ? Je peux en avoir un peu ?$h"
+}

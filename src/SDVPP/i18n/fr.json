@@ -1,0 +1,80 @@
+{
+  "loaded": "SDV++ chargé.",
+
+  "config.SprinklersFillPetBowl.name": "Les arroseurs remplissent la gamelle",
+  "config.SprinklersFillPetBowl.tooltip": "Chaque matin, un arroseur qui atteint l'eau de la gamelle de l'animal de compagnie la remplit. En coop, c'est le réglage de l'hôte qui compte.",
+
+  "config.ConfirmWarpTotems.name": "Confirmer les totems de téléportation",
+  "config.ConfirmWarpTotems.tooltip": "Demande avant qu'un totem de téléportation vous emmène ailleurs.",
+  "config.ConfirmReturnScepter.name": "Confirmer le sceptre de téléportation",
+  "config.ConfirmReturnScepter.tooltip": "Demande avant que le sceptre de téléportation vous ramène chez vous.",
+  "warpConfirm.totem": "Utiliser : {{item}} ?",
+  "warpConfirm.scepter": "Rentrer chez vous avec le {{item}} ?",
+
+  "config.DecoratingTimeFreeze.name": "Temps arrêté pendant la décoration",
+  "config.DecoratingTimeFreeze.tooltip": "Arrête l'horloge dans la maison de la ferme ou dans une cabane. En coop, c'est le réglage de l'hôte qui compte, et tous les joueurs doivent remplir la condition.",
+  "config.DecoratingTimeFreeze.Off": "Désactivé",
+  "config.DecoratingTimeFreeze.HoldingFurniture": "En tenant un meuble",
+  "config.DecoratingTimeFreeze.AnywhereAtHome": "Toujours à la maison",
+  "decorFreeze.started": "Le temps s'arrête pendant que vous décorez.",
+
+  "config.WeddingReminder.name": "Rappel de mariage",
+  "config.WeddingReminder.tooltip": "Recevez une lettre la veille de votre mariage.",
+  "weddingReminder.hud": "Votre mariage a lieu demain matin !",
+
+  "config.WoodShelterStorage.name": "Rangement dans le tas de bois",
+  "config.WoodShelterStorage.tooltip": "Le tas de bois à côté de la porte de la maison stocke le bois et le bois dur, partagés entre tous les joueurs.",
+  "woodShelter.inUse": "Quelqu'un d'autre utilise le tas de bois.",
+
+  "config.StackUnusedTackle.name": "Empiler le matériel de pêche neuf",
+  "config.StackUnusedTackle.tooltip": "Le matériel de pêche jamais utilisé s'empile dans le sac et dans les coffres. Le matériel usé, non. En coop, tous les joueurs devraient utiliser le même réglage.",
+
+  "config.FastTitleScreen.name": "Écran titre rapide",
+  "config.FastTitleScreen.tooltip": "Passe l'introduction, affiche tout de suite les boutons de l'écran titre et raccourcit le fondu après le choix d'une sauvegarde.",
+  "config.TitleSlideMilliseconds.name": "Durée du glissement de l'écran titre",
+  "config.TitleSlideMilliseconds.tooltip": "La durée du glissement vers Nouveau, Charger et Coop. Dans le jeu de base, il est d'autant plus lent que l'écran est large.",
+  "config.TitleSlideMilliseconds.vanilla": "Jeu de base",
+  "config.TitleSlideMilliseconds.ms": "{{ms}} ms",
+
+  "config.TitleUiScale.name": "Taille de l'interface sur l'écran titre",
+  "config.TitleUiScale.tooltip": "La taille de l'interface dans les menus titre, chargement, coop et création de personnage. Le jeu y utilise toujours 100 %.",
+  "config.TitleUiScale.auto": "Comme en jeu",
+  "config.ExtendedScaleRanges.name": "Interface et zoom plus grands",
+  "config.ExtendedScaleRanges.tooltip": "Dans les options du jeu, autorise une taille d'interface jusqu'à la plus grande qui tient sur votre écran, et un zoom jusqu'à 250 %.",
+
+  "config.KeyboardMenus.name": "Menus au clavier",
+  "config.KeyboardMenus.tooltip": "Les flèches parcourent les menus, Entrée ou Espace cliquent, Retour arrière fait un clic droit, les touches numériques répondent aux questions et Échap revient en arrière sur l'écran titre.",
+
+  "config.FadeSpeed.name": "Vitesse du fondu entre les lieux",
+  "config.FadeSpeed.tooltip": "La vitesse à laquelle l'écran passe au noir puis revient quand vous changez de lieu. Le sommeil et les cinématiques ne changent pas.",
+  "config.FadeSpeed.vanilla": "Jeu de base",
+  "config.FadeSpeed.times": "x{{speed}}",
+
+  "config.CraftWithShelterWood.name": "Fabriquer avec le bois du tas",
+  "config.CraftWithShelterWood.tooltip": "Quand vous fabriquez sur la ferme ou dans une maison, le bois et le bois dur du tas de bois comptent comme ingrédients.",
+
+  "config.NoEatPromptOnCrops.name": "Pas de « Manger ? » sur les cultures",
+  "config.NoEatPromptOnCrops.tooltip": "Ne propose pas de manger ce que vous tenez quand vous cliquez sur une culture ou un produit de cueillette, par exemple une culture pas encore mûre.",
+  "config.NoGiftsThroughDoors.name": "Pas de cadeaux à travers les portes",
+  "config.NoGiftsThroughDoors.tooltip": "Quand vous ouvrez une porte en tenant un objet, il n'est pas donné à un villageois qui se tient juste en dessous de la porte.",
+
+  "config.RangePreview.name": "Aperçu de la portée",
+  "config.RangePreview.tooltip": "Montre la zone couverte par un arroseur, un épouvantail, une ruche ou une hutte de Junimo quand vous en tenez ou placez un, ou que vous pointez dessus.",
+
+  "config.BuildWithShelterWood.name": "Construire avec le bois du tas",
+  "config.BuildWithShelterWood.tooltip": "Les constructions de Robine et les agrandissements de la maison peuvent utiliser le bois et le bois dur du tas de bois.",
+
+  "config.PlayerBirthday.name": "Votre anniversaire",
+  "config.PlayerBirthday.tooltip": "Le maire Lewis vous demande la date de votre anniversaire. Ce jour-là, les villageois vous le souhaitent et vos amis vous écrivent.",
+  "birthday.askSeason": "En quelle saison est votre anniversaire ?",
+  "birthday.askWeek": "Quelle semaine ?",
+  "birthday.askDay": "Quel jour ?",
+  "birthday.week": "Jours {{from}} à {{to}}",
+  "birthday.dayOption": "{{weekday}} {{day}}",
+  "birthday.later": "Me redemander plus tard",
+  "birthday.back": "Retour",
+  "birthday.confirm": "Votre anniversaire : jour {{day}}, {{season}}. C'est bien ça ?",
+  "birthday.saved": "Lewis a noté votre anniversaire sur le calendrier.",
+  "birthday.hud": "Joyeux anniversaire !",
+  "birthday.spouse": "Joyeux anniversaire, @ ! Je voulais être la première personne à te le souhaiter.$h"
+}

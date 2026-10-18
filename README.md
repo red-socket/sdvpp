@@ -76,6 +76,12 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 | ![Options menu at 200% UI scale](media/options-200.jpg) | |
 | The options menu at 200% UI scale | |
 
+## Translations
+
+SDV++ comes in English, French, German, Brazilian Portuguese and Spanish, and follows the game's language setting.
+
+To translate it into another language, copy `i18n/default.json` in both the `SDVPP` and `SDVPP.Content` folders. Name each copy after the game's language code, such as `es.json` for Spanish, and translate the text. Leave the `{{...}}` tokens, `@`, `^`, `$h` and the `%item ... %%` parts as they are.
+
 ## Known limitations
 
 - Each sprinkler upgrade recipe you know counts toward Craft Master and Perfection, so you need to craft each one once.

@@ -1,0 +1,80 @@
+{
+  "loaded": "SDV++ geladen.",
+
+  "config.SprinklersFillPetBowl.name": "Sprinkler füllen die Haustier-Schüssel",
+  "config.SprinklersFillPetBowl.tooltip": "Jeden Morgen füllt ein Sprinkler, der das Wasser der Haustier-Schüssel erreicht, sie auf. Im Koop-Modus gilt die Einstellung des Hosts.",
+
+  "config.ConfirmWarpTotems.name": "Teleport-Totems bestätigen",
+  "config.ConfirmWarpTotems.tooltip": "Fragt nach, bevor ein Teleport-Totem dich woanders hinbringt.",
+  "config.ConfirmReturnScepter.name": "Zepter der Rückkehr bestätigen",
+  "config.ConfirmReturnScepter.tooltip": "Fragt nach, bevor das Zepter der Rückkehr dich nach Hause bringt.",
+  "warpConfirm.totem": "{{item}} benutzen?",
+  "warpConfirm.scepter": "Mit dem {{item}} nach Hause zurückkehren?",
+
+  "config.DecoratingTimeFreeze.name": "Zeitstopp beim Einrichten",
+  "config.DecoratingTimeFreeze.tooltip": "Hält die Uhr im Farmhaus oder in einer Hütte an. Im Koop-Modus gilt die Einstellung des Hosts, und alle Spieler müssen die Bedingung erfüllen.",
+  "config.DecoratingTimeFreeze.Off": "Aus",
+  "config.DecoratingTimeFreeze.HoldingFurniture": "Wenn du ein Möbelstück hältst",
+  "config.DecoratingTimeFreeze.AnywhereAtHome": "Immer zu Hause",
+  "decorFreeze.started": "Die Zeit steht still, während du einrichtest.",
+
+  "config.WeddingReminder.name": "Hochzeitserinnerung",
+  "config.WeddingReminder.tooltip": "Du bekommst am Tag vor deiner Hochzeit einen Brief.",
+  "weddingReminder.hud": "Deine Hochzeit ist morgen früh!",
+
+  "config.WoodShelterStorage.name": "Lager im Holzstapel",
+  "config.WoodShelterStorage.tooltip": "Der Holzstapel neben der Haustür lagert Holz und Hartholz, das alle Spieler gemeinsam nutzen.",
+  "woodShelter.inUse": "Jemand anderes benutzt gerade den Holzstapel.",
+
+  "config.StackUnusedTackle.name": "Unbenutztes Angelgerät stapeln",
+  "config.StackUnusedTackle.tooltip": "Unbenutztes Angelgerät lässt sich im Rucksack und in Truhen stapeln. Abgenutztes nicht. Im Koop-Modus sollten alle Spieler dieselbe Einstellung verwenden.",
+
+  "config.FastTitleScreen.name": "Schneller Titelbildschirm",
+  "config.FastTitleScreen.tooltip": "Überspringt das Intro, zeigt die Titel-Schaltflächen sofort an und verkürzt die Überblendung nach der Wahl eines Spielstands.",
+  "config.TitleSlideMilliseconds.name": "Dauer der Titel-Animation",
+  "config.TitleSlideMilliseconds.tooltip": "Wie lange das Gleiten zu Neu, Laden und Koop dauert. Im Originalspiel wird es langsamer, je breiter dein Bildschirm ist.",
+  "config.TitleSlideMilliseconds.vanilla": "Original",
+  "config.TitleSlideMilliseconds.ms": "{{ms}} ms",
+
+  "config.TitleUiScale.name": "UI-Skalierung im Titelbildschirm",
+  "config.TitleUiScale.tooltip": "Die UI-Skalierung in den Menüs für Titel, Laden, Koop und Charaktererstellung. Das Spiel verwendet dort immer 100 %.",
+  "config.TitleUiScale.auto": "Wie im Spiel",
+  "config.ExtendedScaleRanges.name": "Größere UI-Skalierung und Zoom",
+  "config.ExtendedScaleRanges.tooltip": "Erlaubt in den Spieloptionen UI-Skalierungen bis zur größten, die noch auf deinen Bildschirm passt, und Zoom bis 250 %.",
+
+  "config.KeyboardMenus.name": "Menüs mit der Tastatur",
+  "config.KeyboardMenus.tooltip": "Pfeiltasten bewegen sich durch Menüs, Enter oder Leertaste klicken, Rücktaste macht einen Rechtsklick, Zifferntasten beantworten Fragen und Esc geht im Titelbildschirm zurück.",
+
+  "config.FadeSpeed.name": "Überblendung zwischen Orten",
+  "config.FadeSpeed.tooltip": "Wie schnell der Bildschirm schwarz wird und wieder aufhellt, wenn du von einem Ort zum nächsten gehst. Schlafen und Zwischensequenzen sind nicht betroffen.",
+  "config.FadeSpeed.vanilla": "Original",
+  "config.FadeSpeed.times": "{{speed}}x",
+
+  "config.CraftWithShelterWood.name": "Mit Holz vom Stapel herstellen",
+  "config.CraftWithShelterWood.tooltip": "Wenn du auf dem Hof oder in einem Haus etwas herstellst, zählen Holz und Hartholz im Holzstapel als Zutaten.",
+
+  "config.NoEatPromptOnCrops.name": "Kein „Essen?“ bei Pflanzen",
+  "config.NoEatPromptOnCrops.tooltip": "Bietet nicht an, das Essen in deiner Hand zu essen, wenn du auf eine Pflanze oder etwas zum Sammeln klickst, zum Beispiel eine noch unreife Pflanze.",
+  "config.NoGiftsThroughDoors.name": "Keine Geschenke durch Türen",
+  "config.NoGiftsThroughDoors.tooltip": "Wenn du eine Tür öffnest und dabei einen Gegenstand hältst, bekommt ihn kein Dorfbewohner, der direkt unter der Tür steht.",
+
+  "config.RangePreview.name": "Reichweite anzeigen",
+  "config.RangePreview.tooltip": "Zeigt den Bereich, den ein Sprinkler, eine Vogelscheuche, ein Bienenhaus oder eine Junimo-Hütte abdeckt, während du eines hältst oder platzierst oder darauf zeigst.",
+
+  "config.BuildWithShelterWood.name": "Mit Holz vom Stapel bauen",
+  "config.BuildWithShelterWood.tooltip": "Robins Gebäude und Hausausbauten können Holz und Hartholz aus dem Holzstapel verwenden.",
+
+  "config.PlayerBirthday.name": "Dein Geburtstag",
+  "config.PlayerBirthday.tooltip": "Bürgermeister Lewis fragt nach deinem Geburtstag. An dem Tag gratulieren dir die Dorfbewohner und Freunde schicken dir Briefe.",
+  "birthday.askSeason": "In welcher Jahreszeit hast du Geburtstag?",
+  "birthday.askWeek": "In welcher Woche?",
+  "birthday.askDay": "An welchem Tag?",
+  "birthday.week": "Tag {{from}} bis {{to}}",
+  "birthday.dayOption": "{{weekday}} {{day}}",
+  "birthday.later": "Frag mich später",
+  "birthday.back": "Zurück",
+  "birthday.confirm": "Dein Geburtstag ist am {{day}}. Tag im {{season}}. Stimmt das?",
+  "birthday.saved": "Lewis hat deinen Geburtstag in den Kalender eingetragen.",
+  "birthday.hud": "Alles Gute zum Geburtstag!",
+  "birthday.spouse": "Alles Gute zum Geburtstag, @! Ich wollte dir als Erstes gratulieren.$h"
+}

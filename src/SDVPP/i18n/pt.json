@@ -1,0 +1,80 @@
+{
+  "loaded": "SDV++ carregado.",
+
+  "config.SprinklersFillPetBowl.name": "Aspersores enchem a tigela do animal",
+  "config.SprinklersFillPetBowl.tooltip": "Toda manhã, um aspersor que alcança a água da tigela do animal de estimação a enche. No cooperativo, vale a configuração do anfitrião.",
+
+  "config.ConfirmWarpTotems.name": "Confirmar totens de teletransporte",
+  "config.ConfirmWarpTotems.tooltip": "Pergunta antes que um totem de teletransporte leve você embora.",
+  "config.ConfirmReturnScepter.name": "Confirmar Cetro do Retorno",
+  "config.ConfirmReturnScepter.tooltip": "Pergunta antes que o Cetro do Retorno leve você para casa.",
+  "warpConfirm.totem": "Usar {{item}}?",
+  "warpConfirm.scepter": "Voltar para casa com o {{item}}?",
+
+  "config.DecoratingTimeFreeze.name": "Tempo parado ao decorar",
+  "config.DecoratingTimeFreeze.tooltip": "Para o relógio dentro da casa da fazenda ou da casa de outro jogador. No cooperativo, vale a configuração do anfitrião e todos os jogadores precisam atender à condição.",
+  "config.DecoratingTimeFreeze.Off": "Desligado",
+  "config.DecoratingTimeFreeze.HoldingFurniture": "Segurando um móvel",
+  "config.DecoratingTimeFreeze.AnywhereAtHome": "Sempre em casa",
+  "decorFreeze.started": "O tempo para enquanto você decora.",
+
+  "config.WeddingReminder.name": "Lembrete de casamento",
+  "config.WeddingReminder.tooltip": "Receba uma carta na véspera do seu casamento.",
+  "weddingReminder.hud": "Seu casamento é amanhã de manhã!",
+
+  "config.WoodShelterStorage.name": "Guardar na pilha de lenha",
+  "config.WoodShelterStorage.tooltip": "A pilha de lenha ao lado da porta da casa guarda Madeira e Madeira de Lei, compartilhadas por todos os jogadores.",
+  "woodShelter.inUse": "Outra pessoa está usando a pilha de lenha.",
+
+  "config.StackUnusedTackle.name": "Empilhar anzóis sem uso",
+  "config.StackUnusedTackle.tooltip": "Anzóis de pesca sem uso se empilham na mochila e nos baús. Os já gastos não. No cooperativo, todos os jogadores devem usar a mesma configuração.",
+
+  "config.FastTitleScreen.name": "Tela de título rápida",
+  "config.FastTitleScreen.tooltip": "Pula a introdução, mostra os botões do título na hora e encurta o escurecimento depois de escolher um jogo salvo.",
+  "config.TitleSlideMilliseconds.name": "Duração do deslize do título",
+  "config.TitleSlideMilliseconds.tooltip": "Quanto tempo leva o deslize até Novo, Carregar e Cooperativo. No jogo original, ele fica mais lento quanto mais larga for a tela.",
+  "config.TitleSlideMilliseconds.vanilla": "Original",
+  "config.TitleSlideMilliseconds.ms": "{{ms}} ms",
+
+  "config.TitleUiScale.name": "Escala da interface no título",
+  "config.TitleUiScale.tooltip": "A escala da interface nos menus de título, carregamento, cooperativo e criação de personagem. O jogo sempre usa 100% neles.",
+  "config.TitleUiScale.auto": "Igual à do jogo",
+  "config.ExtendedScaleRanges.name": "Escala e zoom maiores",
+  "config.ExtendedScaleRanges.tooltip": "Nas opções do jogo, permite escalas da interface até o máximo que ainda cabe na tela, e zoom até 250%.",
+
+  "config.KeyboardMenus.name": "Menus pelo teclado",
+  "config.KeyboardMenus.tooltip": "As setas percorrem os menus, Enter ou Espaço clicam, Backspace clica com o botão direito, as teclas numéricas respondem perguntas e Esc volta na tela de título.",
+
+  "config.FadeSpeed.name": "Velocidade da transição entre locais",
+  "config.FadeSpeed.tooltip": "A rapidez com que a tela escurece e clareia quando você anda de um local para outro. Não afeta o sono nem as cenas.",
+  "config.FadeSpeed.vanilla": "Original",
+  "config.FadeSpeed.times": "{{speed}}x",
+
+  "config.CraftWithShelterWood.name": "Fabricar com a madeira da pilha",
+  "config.CraftWithShelterWood.tooltip": "Ao fabricar na fazenda ou dentro de casa, a Madeira e a Madeira de Lei da pilha de lenha contam como ingredientes.",
+
+  "config.NoEatPromptOnCrops.name": "Sem \"Comer?\" nas plantações",
+  "config.NoEatPromptOnCrops.tooltip": "Não oferece para comer o que está na sua mão quando você clica numa plantação ou num item de coleta, como uma plantação que ainda não está madura.",
+  "config.NoGiftsThroughDoors.name": "Sem presentes pela porta",
+  "config.NoGiftsThroughDoors.tooltip": "Quando você abre uma porta segurando um item, ele não é entregue a um morador parado logo abaixo da porta.",
+
+  "config.RangePreview.name": "Mostrar alcance",
+  "config.RangePreview.tooltip": "Mostra a área que um aspersor, espantalho, apiário ou Cabana dos Junimos cobre enquanto você segura ou posiciona um, ou aponta para um.",
+
+  "config.BuildWithShelterWood.name": "Construir com a madeira da pilha",
+  "config.BuildWithShelterWood.tooltip": "As construções da Robin e as melhorias da casa podem usar a Madeira e a Madeira de Lei da pilha de lenha.",
+
+  "config.PlayerBirthday.name": "Seu aniversário",
+  "config.PlayerBirthday.tooltip": "O Prefeito Lewis pergunta a data do seu aniversário. No dia, os moradores dão os parabéns e os amigos mandam cartas.",
+  "birthday.askSeason": "Em que estação é o seu aniversário?",
+  "birthday.askWeek": "Em que semana?",
+  "birthday.askDay": "Em que dia?",
+  "birthday.week": "Dias {{from}} a {{to}}",
+  "birthday.dayOption": "{{weekday}} {{day}}",
+  "birthday.later": "Pergunte depois",
+  "birthday.back": "Voltar",
+  "birthday.confirm": "Seu aniversário é dia {{day}} de {{season}}. Está certo?",
+  "birthday.saved": "O Lewis anotou seu aniversário no calendário.",
+  "birthday.hud": "Feliz aniversário!",
+  "birthday.spouse": "Feliz aniversário, @! Eu queria dar os parabéns antes de todo mundo.$h"
+}

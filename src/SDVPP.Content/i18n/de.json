@@ -1,0 +1,49 @@
+{
+  "config.NextSeasonSeeds.name": "Samen der nächsten Jahreszeit am 28.",
+  "config.NextSeasonSeeds.description": "Am letzten Tag von Frühling, Sommer und Herbst verkaufen Pierre und der Joja-Markt auch die Samen der nächsten Jahreszeit.",
+
+  "config.SprinklerUpgradeRecipes.name": "Rezepte zum Aufwerten von Sprinklern",
+  "config.SprinklerUpgradeRecipes.description": "Stelle einen Qualitätssprinkler aus einem Sprinkler her und einen Iridium-Sprinkler aus einem Qualitätssprinkler. Hinweis: Jedes Rezept, das du kennst, zählt für Handwerksmeister und für die Perfektion.",
+  "recipe.qualitySprinklerUpgrade": "Qualitätssprinkler (Aufwertung)",
+  "recipe.iridiumSprinklerUpgrade": "Iridium-Sprinkler (Aufwertung)",
+
+  "config.SiloUpgrades.name": "Silo-Ausbau",
+  "config.SiloUpgrades.description": "Robin kann ein Silo zu einem großen Silo (500 Heu) und danach zu einem Deluxe-Silo (750 Heu) ausbauen. Wenn du das ausschaltest, während ausgebaute Silos auf dem Hof stehen, fehlen ihnen die Gebäudedaten.",
+  "building.bigSilo.name": "Großes Silo",
+  "building.bigSilo.description": "Ein stabileres Silo, das bis zu 500 Heu lagert.",
+  "building.deluxeSilo.name": "Deluxe-Silo",
+  "building.deluxeSilo.description": "Ein verstärktes Silo, das bis zu 750 Heu lagert.",
+
+  "mail.weddingTomorrow": "${Lieber^Liebe}$ @,^^deine Hochzeit ist morgen! Die Zeremonie beginnt, sobald du aufwachst. Was du heute Abend beim Schlafengehen trägst, trägst du also auch bei deiner Hochzeit.^^Die ganze Stadt freut sich schon darauf.^^   -Bürgermeister Lewis[#]Dein Hochzeitstag",
+
+  "config.MinecartStops.name": "Lorenhaltestellen im Wald und am Strand",
+  "config.MinecartStops.description": "Fügt Lorenhaltestellen im Zundersaftwald (nahe dem Hof) und am Strand (am Ende des Wegs aus der Stadt) hinzu. Sie gehören zum selben Netz wie die anderen Loren, das der Heizraum freischaltet.",
+  "minecart.forest": "Wald",
+  "minecart.beach": "Strand",
+
+  "config.FountainWater.name": "Gießkanne am Stadtbrunnen füllen",
+  "config.FountainWater.description": "Der Brunnen in Pelikan füllt deine Gießkanne, außer im Winter.",
+
+  "config.SiloPainting.name": "Silo streichen",
+  "config.SiloPainting.description": "Robin kann Silos streichen, auch große Silos und Deluxe-Silos. Du kannst Wände, Kuppel und den Ring darunter in verschiedenen Farben streichen.",
+
+  "mail.birthdayAsk": "${Lieber^Liebe}$ @,^^neben Pierres Laden führe ich einen Kalender mit den Geburtstagen aller Leute, damit die Stadt keinen vergisst. Mir ist aufgefallen, dass deiner noch fehlt! Sag mir das Datum, dann trage ich ihn ein.^^   -Bürgermeister Lewis[#]Für den Stadtkalender",
+  "mail.birthday.Mom": "${Lieber^Liebe}$ @,^^alles Gute zum Geburtstag, mein Schatz! Ich habe deinen Lieblingskuchen gebacken. Ich hoffe, dass es dir auf dem Hof gut geht und dass du ordentlich isst.^^Alles Liebe, Mama %item id (O)221 1 %%[#]Alles Gute von Mama",
+  "mail.birthday.Dad": "${Lieber^Liebe}$ @,^^alles Gute zum Geburtstag! Ich bin stolz auf dich, dass du Opas Hof übernommen hast. Gönn dir etwas Schönes.^^Alles Liebe, Papa %item money 500 501 %%[#]Alles Gute von Papa",
+  "mail.birthday.Lewis": "@,^^alles Gute zum Geburtstag von uns allen im Bürgermeisteramt! Dein Großvater wäre stolz darauf, was du aus dem Hof gemacht hast.^^   -Bürgermeister Lewis %item money 500 501 %%[#]Glückwünsche",
+  "mail.birthday.Evelyn": "${Lieber^Liebe}$ @,^^alles Gute zum Geburtstag, mein Schatz! Ich habe dir einen Schokoladenkuchen gebacken. George lässt auch grüßen, auf seine Art.^^   -Evelyn %item id (O)220 1 %%[#]Ein Kuchen für dich",
+  "mail.birthday.Gus": "@!^^Alles Gute zum Geburtstag! Hier ist etwas Warmes aus der Küche der Kneipe. Komm heute Abend vorbei, dein erstes Getränk geht auf mich.^^   -Gus %item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 %%[#]Aus der Kneipe",
+  "mail.birthday.Robin": "Hey @!^^Alles Gute zum Geburtstag! Ich hatte noch gutes Hartholz übrig und musste an dich denken. Sag Bescheid, wenn ich dir mal etwas bauen soll.^^   -Robin %item id (O)709 10 %%[#]Hartholz zum Geburtstag",
+  "birthday.greeting.Lewis": "Alles Gute zum Geburtstag, @! Ich habe ihn selbst in den Stadtkalender eingetragen.$h",
+  "birthday.greeting.Evelyn": "Alles Gute zum Geburtstag, mein Schatz. Jedes Jahr erinnerst du mich mehr an deinen Großvater.$h",
+  "birthday.greeting.Gus": "Na, sieh mal einer an, wer heute Geburtstag hat! Komm heute Abend in die Kneipe.$h",
+  "birthday.greeting.Robin": "Alles Gute zum Geburtstag, @! Wieder ein Jahr älter, und du kümmerst dich immer noch um den ganzen Hof. Beeindruckend!$h",
+  "birthday.greeting.Pierre": "Alles Gute zum Geburtstag! Brauchst du zur Feier des Tages Samen? Nur ein Scherz... größtenteils.$h",
+  "birthday.greeting.Marnie": "Alles Gute zum Geburtstag, @! Sogar die Kühe wirken heute fröhlich.$h",
+  "birthday.greeting.Linus": "Lewis hat mir erzählt, dass du Geburtstag hast. Der Berg wünscht dir alles Gute, und ich auch.$h",
+  "birthday.greeting.Willy": "Alles Gute zum Geburtstag, @. Mein Vater hat immer gesagt, ein Geburtstag ist ein guter Tag, um die Angel auszuwerfen.$h",
+  "birthday.greeting.Clint": "Oh... äh, alles Gute zum Geburtstag. Gus hat's erwähnt. Ich hoffe, du hast einen schönen Tag.",
+  "birthday.greeting.Wizard": "Ich habe vorhergesehen, dass heute der Tag deiner Geburt ist. Mögen dir noch viele Jahre beschieden sein, junger Mensch.",
+  "birthday.greeting.Penny": "Alles Gute zum Geburtstag, @! Jas und Vincent basteln dir eine Karte. Sie sind noch nicht ganz fertig.$h",
+  "birthday.greeting.Vincent": "Du hast Geburtstag? Gibt es Kuchen? Krieg ich ein Stück?$h"
+}

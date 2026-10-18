@@ -1,0 +1,49 @@
+{
+  "config.NextSeasonSeeds.name": "Semillas de la próxima estación el día 28",
+  "config.NextSeasonSeeds.description": "El último día de la primavera, el verano y el otoño, Pierre y MercaJoja también venden las semillas de la próxima estación.",
+
+  "config.SprinklerUpgradeRecipes.name": "Recetas para mejorar aspersores",
+  "config.SprinklerUpgradeRecipes.description": "Fabrica un aspersor de calidad a partir de un aspersor, y un aspersor de iridio a partir de un aspersor de calidad. Nota: cada receta que conoces cuenta para Maestro artesano y para la perfección.",
+  "recipe.qualitySprinklerUpgrade": "Aspersor de calidad (mejora)",
+  "recipe.iridiumSprinklerUpgrade": "Aspersor de iridio (mejora)",
+
+  "config.SiloUpgrades.name": "Mejoras del silo",
+  "config.SiloUpgrades.description": "Robin puede convertir un silo en un silo grande (500 de heno) y luego en un silo de lujo (750 de heno). Si desactivas esto con silos mejorados en la granja, se quedan sin datos.",
+  "building.bigSilo.name": "Silo grande",
+  "building.bigSilo.description": "Un silo más resistente que guarda hasta 500 unidades de heno.",
+  "building.deluxeSilo.name": "Silo de lujo",
+  "building.deluxeSilo.description": "Un silo reforzado que guarda hasta 750 unidades de heno.",
+
+  "mail.weddingTomorrow": "${Estimado^Estimada}$ @:^^¡Tu boda es mañana! La ceremonia empieza en cuanto te despiertes, así que la ropa que lleves al irte a dormir esta noche será la de tu boda.^^Todo el pueblo tiene muchas ganas.^^   -Alcalde Lewis[#]El día de tu boda",
+
+  "config.MinecartStops.name": "Paradas de vagoneta en el bosque y la playa",
+  "config.MinecartStops.description": "Añade paradas de vagoneta en el Bosque Tizón (cerca de la granja) y en la playa (al final del camino que viene del pueblo). Usan la misma red que las demás vagonetas, que se abre con la sala de calderas.",
+  "minecart.forest": "Bosque",
+  "minecart.beach": "Playa",
+
+  "config.FountainWater.name": "Llenar la regadera en la fuente del pueblo",
+  "config.FountainWater.description": "La fuente de Pueblo Pelícano llena tu regadera, salvo en invierno.",
+
+  "config.SiloPainting.name": "Pintar el silo",
+  "config.SiloPainting.description": "Robin puede pintar silos, también los silos grandes y de lujo. Puedes elegir colores distintos para las paredes, la cúpula y el anillo que hay debajo.",
+
+  "mail.birthdayAsk": "${Estimado^Estimada}$ @:^^Junto a la tienda de Pierre tengo un calendario con los cumpleaños de todos, para que el pueblo no se olvide de ninguno. ¡Me he dado cuenta de que no tengo el tuyo! Dime la fecha y lo apunto.^^   -Alcalde Lewis[#]Para el calendario del pueblo",
+  "mail.birthday.Mom": "${Querido^Querida}$ @:^^¡Feliz cumpleaños, cariño! Te he hecho tu tarta favorita. Espero que la granja te trate bien y que comas como es debido.^^Con cariño,^Mamá %item id (O)221 1 %%[#]Feliz cumpleaños de mamá",
+  "mail.birthday.Dad": "${Querido^Querida}$ @:^^Feliz cumpleaños, ${hijo^hija}$. Estoy orgulloso de que te hayas hecho cargo de la granja del abuelo. Date un capricho.^^Con cariño,^Papá %item money 500 501 %%[#]Feliz cumpleaños de papá",
+  "mail.birthday.Lewis": "@:^^¡Feliz cumpleaños de parte de todos en la alcaldía! Tu abuelo estaría orgulloso de lo que has hecho con la granja.^^   -Alcalde Lewis %item money 500 501 %%[#]Felicidades",
+  "mail.birthday.Evelyn": "${Querido^Querida}$ @:^^¡Feliz cumpleaños, cielo! Te he hecho un pastel de chocolate. George también te saluda, a su manera.^^   -Evelyn %item id (O)220 1 %%[#]Un pastel para ti",
+  "mail.birthday.Gus": "¡@!^^¡Feliz cumpleaños! Aquí tienes algo calentito de la cocina del salón. Pásate esta noche y la primera copa corre de mi cuenta.^^   -Gus %item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 %%[#]Del salón",
+  "mail.birthday.Robin": "¡Hola, @!^^¡Feliz cumpleaños! Me ha sobrado algo de madera noble buena y me he acordado de ti. Si algún día quieres que te construya algo, avísame.^^   -Robin %item id (O)709 10 %%[#]Madera noble de regalo",
+  "birthday.greeting.Lewis": "¡Feliz cumpleaños, @! Lo apunté yo mismo en el calendario del pueblo.$h",
+  "birthday.greeting.Evelyn": "Feliz cumpleaños, cielo. Cada año me recuerdas más a tu abuelo.$h",
+  "birthday.greeting.Gus": "¡Vaya, mira quién cumple años hoy! Pásate por el salón esta noche.$h",
+  "birthday.greeting.Robin": "¡Feliz cumpleaños, @! Un año más y sigues llevando toda esa granja. ¡Impresionante!$h",
+  "birthday.greeting.Pierre": "¡Feliz cumpleaños! ¿Necesitas semillas para celebrarlo? Es broma... casi.$h",
+  "birthday.greeting.Marnie": "¡Feliz cumpleaños, @! Hasta las vacas parecen contentas hoy.$h",
+  "birthday.greeting.Linus": "Lewis me ha dicho que es tu cumpleaños. La montaña te desea lo mejor, y yo también.$h",
+  "birthday.greeting.Willy": "Feliz cumpleaños, @. Mi padre siempre decía que un cumpleaños es un buen día para echar la caña.$h",
+  "birthday.greeting.Clint": "Ah... eh, feliz cumpleaños. Me lo dijo Gus. Espero que sea un buen día.",
+  "birthday.greeting.Wizard": "He previsto que hoy es el día de tu nacimiento. Que cumplas muchos más, joven.",
+  "birthday.greeting.Penny": "¡Feliz cumpleaños, @! Jas y Vincent te están haciendo una tarjeta. Todavía no la han terminado.$h",
+  "birthday.greeting.Vincent": "¿Es tu cumpleaños? ¿Vas a tener tarta? ¿Me das un poco?$h"
+}
