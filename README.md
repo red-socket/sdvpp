@@ -1,3 +1,5 @@
+![SDV++](media/banner.png)
+
 # SDV++
 
 SDV++ is a mod for Stardew Valley 1.6 that adds quality-of-life changes. It works in single-player and in co-op, including split-screen.
@@ -62,6 +64,17 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 - The options menu offers UI scales up to the largest that fits your screen (200% at 2560x1440) and zoom up to 250%. (`ExtendedScaleRanges`)
 - Menus work with the keyboard: arrow keys move, Enter or Space clicks, Backspace right-clicks, number keys pick an answer to a question, and Escape goes back on the title screen. (`KeyboardMenus`)
 - The fade between locations is twice as fast. Sleeping and cutscenes keep their usual pace. (`FadeSpeed`, 1 for the game's speed)
+
+## Screenshots
+
+| | |
+|---|---|
+| ![Scarecrow range while placing it](media/range-preview.jpg) | ![Bee house range](media/range-preview-bee-house.jpg) |
+| The area a scarecrow protects, shown while you place it | The area a bee house looks for flowers in |
+| ![Minecart stop on the Beach](media/minecart-beach.jpg) | ![Minecart stop in the Forest](media/minecart-forest.jpg) |
+| The minecart stop at the bottom of the path from town | The Forest stop, a short walk from the farm |
+| ![Options menu at 200% UI scale](media/options-200.jpg) | |
+| The options menu at 200% UI scale | |
 
 ## Known limitations
 
