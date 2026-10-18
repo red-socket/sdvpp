@@ -26,6 +26,9 @@ internal sealed class ModConfig
     /// <summary>When crafting at home, ingredients can come from the wood shelter. Each player's own setting applies.</summary>
     public bool CraftWithShelterWood { get; set; } = true;
 
+    /// <summary>Robin's buildings and house upgrades can use Wood and Hardwood from the wood shelter. Each player's own setting applies.</summary>
+    public bool BuildWithShelterWood { get; set; } = true;
+
     /// <summary>Unused fishing tackle stacks. Every player in co-op should have the same setting.</summary>
     public bool StackUnusedTackle { get; set; } = true;
 
@@ -46,4 +49,16 @@ internal sealed class ModConfig
 
     /// <summary>How fast the fade between locations runs compared to vanilla; 1 keeps vanilla.</summary>
     public float FadeSpeed { get; set; } = 2f;
+
+    /// <summary>Don't offer to eat the held food when clicking a crop or forage.</summary>
+    public bool NoEatPromptOnCrops { get; set; } = true;
+
+    /// <summary>Don't hand the held item to an NPC standing below a door you're opening.</summary>
+    public bool NoGiftsThroughDoors { get; set; } = true;
+
+    /// <summary>Show the area sprinklers, scarecrows, bee houses and Junimo huts cover.</summary>
+    public bool RangePreview { get; set; } = true;
+
+    /// <summary>Pick a birthday; on the day villagers wish you well and friends send letters. Each player's own setting applies.</summary>
+    public bool PlayerBirthday { get; set; } = true;
 }

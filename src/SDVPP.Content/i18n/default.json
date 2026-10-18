@@ -22,5 +22,28 @@
   "minecart.beach": "Beach",
 
   "config.FountainWater.name": "Fill the watering can at the town fountain",
-  "config.FountainWater.description": "The fountain in Pelican Town refills your watering can, except in winter."
+  "config.FountainWater.description": "The fountain in Pelican Town refills your watering can, except in winter.",
+
+  "config.SiloPainting.name": "Paint the silo",
+  "config.SiloPainting.description": "Robin can paint silos, including Big and Deluxe Silos. You can color the walls, the dome and the ring under it separately.",
+
+  "mail.birthdayAsk": "Dear @,^^I keep a calendar of everyone's birthdays by Pierre's shop, so the town never misses one. I realized I don't have yours! Tell me the date and I'll add it.^^   -Mayor Lewis[#]For the Town Calendar",
+  "mail.birthday.Mom": "Dear @,^^Happy birthday, sweetheart! I baked your favorite cake. I hope the farm is treating you well and that you're eating properly.^^Love, Mom %item id (O)221 1 %%[#]Happy Birthday from Mom",
+  "mail.birthday.Dad": "Dear @,^^Happy birthday, kiddo. I'm proud of you for taking on Grandpa's farm. Treat yourself to something nice.^^Love, Dad %item money 500 501 %%[#]Happy Birthday from Dad",
+  "mail.birthday.Lewis": "@,^^Happy birthday from all of us at the mayor's office! Your grandfather would be proud of what you've done with the farm.^^   -Mayor Lewis %item money 500 501 %%[#]Birthday Wishes",
+  "mail.birthday.Evelyn": "Dear @,^^Happy birthday, dear! I baked you a chocolate cake. George says hello too, in his own way.^^   -Evelyn %item id (O)220 1 %%[#]A Cake for You",
+  "mail.birthday.Gus": "@!^^Happy birthday! Here's something hot from the Saloon kitchen. Come by tonight and your first drink is on me.^^   -Gus %item id (O)224 1 (O)213 1 (O)211 1 (O)207 1 %%[#]From the Saloon",
+  "mail.birthday.Robin": "Hey @!^^Happy birthday! I had some good hardwood left over and thought of you. Let me know if you ever want something built.^^   -Robin %item id (O)709 10 %%[#]Birthday Hardwood",
+  "birthday.greeting.Lewis": "Happy birthday, @! I wrote it on the town calendar myself.$h",
+  "birthday.greeting.Evelyn": "Happy birthday, dear. You remind me more of your grandfather every year.$h",
+  "birthday.greeting.Gus": "Well, if it isn't the birthday farmer! Stop by the Saloon tonight.$h",
+  "birthday.greeting.Robin": "Happy birthday, @! Another year older and still running that whole farm. Impressive!$h",
+  "birthday.greeting.Pierre": "Happy birthday! Need any seeds to celebrate? Just kidding... mostly.$h",
+  "birthday.greeting.Marnie": "Happy birthday, @! Even the cows seem cheerful today.$h",
+  "birthday.greeting.Linus": "Lewis told me it's your birthday. The mountain wishes you well, and so do I.$h",
+  "birthday.greeting.Willy": "Happy birthday, @. My Pappy always said a birthday's a fine day to cast a line.$h",
+  "birthday.greeting.Clint": "Oh... uh, happy birthday. Gus mentioned it. Hope it's a good one.",
+  "birthday.greeting.Wizard": "I foresaw that today marks the day of your birth. Many happy returns, young one.",
+  "birthday.greeting.Penny": "Happy birthday, @! Jas and Vincent are making you a card. They're still working on it.$h",
+  "birthday.greeting.Vincent": "It's your birthday? Are you having cake? Can I have some?$h"
 }

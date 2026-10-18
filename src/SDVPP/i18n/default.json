@@ -22,9 +22,9 @@
   "config.WeddingReminder.tooltip": "Get a letter on the day before your wedding.",
   "weddingReminder.hud": "Your wedding is tomorrow morning!",
 
-  "config.WoodShelterStorage.name": "Wood shelter storage",
+  "config.WoodShelterStorage.name": "Log pile storage",
   "config.WoodShelterStorage.tooltip": "The log pile beside the farmhouse door stores Wood and Hardwood, shared by all players.",
-  "woodShelter.inUse": "Someone else is using the wood shelter.",
+  "woodShelter.inUse": "Someone else is using the log pile.",
 
   "config.StackUnusedTackle.name": "Stack unused tackle",
   "config.StackUnusedTackle.tooltip": "Unused fishing tackle stacks in your backpack and chests. Worn tackle doesn't. In co-op, every player should use the same setting.",
@@ -50,6 +50,31 @@
   "config.FadeSpeed.vanilla": "Vanilla",
   "config.FadeSpeed.times": "{{speed}}x",
 
-  "config.CraftWithShelterWood.name": "Craft with shelter wood",
-  "config.CraftWithShelterWood.tooltip": "When crafting on the farm or in a farmhouse, Wood and Hardwood in the wood shelter count as ingredients."
+  "config.CraftWithShelterWood.name": "Craft with log pile wood",
+  "config.CraftWithShelterWood.tooltip": "When crafting on the farm or in a farmhouse, Wood and Hardwood in the log pile count as ingredients.",
+
+  "config.NoEatPromptOnCrops.name": "No \"Eat?\" on crops",
+  "config.NoEatPromptOnCrops.tooltip": "Don't offer to eat the food in your hand when you click a crop or forage, for example an unripe crop.",
+  "config.NoGiftsThroughDoors.name": "No gifts through doors",
+  "config.NoGiftsThroughDoors.tooltip": "When you open a door while holding an item, don't hand it to a villager standing just below the door.",
+
+  "config.RangePreview.name": "Range preview",
+  "config.RangePreview.tooltip": "Show the area a sprinkler, scarecrow, bee house or Junimo hut covers while you hold or place one, or point at one.",
+
+  "config.BuildWithShelterWood.name": "Build with log pile wood",
+  "config.BuildWithShelterWood.tooltip": "Robin's buildings and house upgrades can use the Wood and Hardwood in the log pile.",
+
+  "config.PlayerBirthday.name": "Your birthday",
+  "config.PlayerBirthday.tooltip": "Mayor Lewis asks for your birthday. On the day, villagers wish you a happy birthday and friends send letters.",
+  "birthday.askSeason": "Which season is your birthday in?",
+  "birthday.askWeek": "Which week?",
+  "birthday.askDay": "Which day?",
+  "birthday.week": "Days {{from}} to {{to}}",
+  "birthday.dayOption": "{{weekday}} {{day}}",
+  "birthday.later": "Ask me later",
+  "birthday.back": "Back",
+  "birthday.confirm": "Your birthday is {{season}} {{day}}. Is that right?",
+  "birthday.saved": "Lewis has added your birthday to the calendar.",
+  "birthday.hud": "Happy birthday!",
+  "birthday.spouse": "Happy birthday, @! I wanted to be the first to say it.$h"
 }

@@ -21,6 +21,10 @@
     "FountainWater": {
       "AllowValues": "true, false",
       "Default": "true"
+    },
+    "SiloPainting": {
+      "AllowValues": "true, false",
+      "Default": "true"
     }
   },
   "Changes": [
@@ -28,6 +32,11 @@
       "LogName": "Letters",
       "Action": "Include",
       "FromFile": "data/mail.json"
+    },
+    {
+      "LogName": "Birthday",
+      "Action": "Include",
+      "FromFile": "data/birthday.json"
     },
     {
       "LogName": "Wood shelter action",
@@ -63,6 +72,12 @@
       "Action": "Include",
       "FromFile": "data/fountain.json",
       "When": { "FountainWater": true }
+    },
+    {
+      "LogName": "Silo painting",
+      "Action": "Include",
+      "FromFile": "data/silopaint.json",
+      "When": { "SiloPainting": true }
     }
   ]
 }

@@ -20,12 +20,16 @@ internal sealed class ModEntry : Mod
         _ = new WarpConfirm(helper, this.Monitor, () => this.config, harmony);
         _ = new DecorTimeFreeze(helper, this.Monitor, () => this.config);
         _ = new WeddingReminder(helper, this.Monitor, () => this.config);
+        _ = new Birthday(helper, this.Monitor, () => this.config, harmony);
         _ = new WoodShelter(helper, this.Monitor, () => this.config);
         _ = new TackleStacking(this.Monitor, () => this.config, harmony);
         _ = new FastTitle(helper, () => this.config);
         _ = new UiScale(helper, () => this.config, harmony);
         _ = new KeyboardMenus(helper, () => this.config);
         _ = new FastFades(helper, () => this.config);
+        _ = new AccidentGuards(this.Monitor, () => this.config, harmony);
+        _ = new RangePreview(helper, () => this.config);
+        _ = new ShelterRobin(helper, this.Monitor, () => this.config, harmony);
 
         helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
     }
@@ -89,6 +93,13 @@ internal sealed class ModEntry : Mod
         );
         gmcm.AddBoolOption(
             this.ModManifest,
+            getValue: () => this.config.PlayerBirthday,
+            setValue: value => this.config.PlayerBirthday = value,
+            name: () => t.Get("config.PlayerBirthday.name"),
+            tooltip: () => t.Get("config.PlayerBirthday.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
             getValue: () => this.config.WoodShelterStorage,
             setValue: value => this.config.WoodShelterStorage = value,
             name: () => t.Get("config.WoodShelterStorage.name"),
@@ -100,6 +111,13 @@ internal sealed class ModEntry : Mod
             setValue: value => this.config.CraftWithShelterWood = value,
             name: () => t.Get("config.CraftWithShelterWood.name"),
             tooltip: () => t.Get("config.CraftWithShelterWood.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.BuildWithShelterWood,
+            setValue: value => this.config.BuildWithShelterWood = value,
+            name: () => t.Get("config.BuildWithShelterWood.name"),
+            tooltip: () => t.Get("config.BuildWithShelterWood.tooltip")
         );
         gmcm.AddBoolOption(
             this.ModManifest,
@@ -155,6 +173,27 @@ internal sealed class ModEntry : Mod
             tooltip: () => t.Get("config.FadeSpeed.tooltip"),
             allowedValues: new[] { "1", "1.5", "2", "3" },
             formatAllowedValue: value => value == "1" ? t.Get("config.FadeSpeed.vanilla") : t.Get("config.FadeSpeed.times", new { speed = value })
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.NoEatPromptOnCrops,
+            setValue: value => this.config.NoEatPromptOnCrops = value,
+            name: () => t.Get("config.NoEatPromptOnCrops.name"),
+            tooltip: () => t.Get("config.NoEatPromptOnCrops.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.NoGiftsThroughDoors,
+            setValue: value => this.config.NoGiftsThroughDoors = value,
+            name: () => t.Get("config.NoGiftsThroughDoors.name"),
+            tooltip: () => t.Get("config.NoGiftsThroughDoors.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.RangePreview,
+            setValue: value => this.config.RangePreview = value,
+            name: () => t.Get("config.RangePreview.name"),
+            tooltip: () => t.Get("config.RangePreview.tooltip")
         );
     }
 }

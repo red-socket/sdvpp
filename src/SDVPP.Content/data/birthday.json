@@ -1,0 +1,28 @@
+{
+  "Changes": [
+    {
+      "LogName": "Birthday letters",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      // the C# mod puts these in the mailbox: the ask letter until a date is set, the rest on the birthday
+      "Entries": {
+        "{{ModId}}_BirthdayAsk": "{{i18n: mail.birthdayAsk}}",
+        "{{ModId}}_Birthday_Mom": "{{i18n: mail.birthday.Mom}}",
+        "{{ModId}}_Birthday_Dad": "{{i18n: mail.birthday.Dad}}",
+        "{{ModId}}_Birthday_Lewis": "{{i18n: mail.birthday.Lewis}}",
+        "{{ModId}}_Birthday_Evelyn": "{{i18n: mail.birthday.Evelyn}}",
+        "{{ModId}}_Birthday_Gus": "{{i18n: mail.birthday.Gus}}",
+        "{{ModId}}_Birthday_Robin": "{{i18n: mail.birthday.Robin}}"
+      }
+    },
+    {
+      "LogName": "Birthday greetings",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Lewis, Characters/Dialogue/Evelyn, Characters/Dialogue/Gus, Characters/Dialogue/Robin, Characters/Dialogue/Pierre, Characters/Dialogue/Marnie, Characters/Dialogue/Linus, Characters/Dialogue/Willy, Characters/Dialogue/Clint, Characters/Dialogue/Wizard, Characters/Dialogue/Penny, Characters/Dialogue/Vincent",
+      // a conversation topic the C# mod starts on the player's birthday
+      "Entries": {
+        "Luke.SDVPP_Birthday": "{{i18n: birthday.greeting.{{TargetWithoutPath}}}}"
+      }
+    }
+  ]
+}

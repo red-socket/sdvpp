@@ -1,0 +1,23 @@
+{
+  "Changes": [
+    {
+      "LogName": "Silo paint mask",
+      "Action": "Load",
+      "Target": "Buildings/Silo_PaintMask",
+      // our own mask (see tools/make-silo-mask.py): red = walls, green = dome, blue = the ring under the dome.
+      // The game finds a mask by the building's texture, so SDV++'s upgraded silos (same texture) share it.
+      "FromFile": "assets/Silo_PaintMask.png"
+    },
+    {
+      "LogName": "Silo paint regions",
+      "Action": "EditData",
+      "Target": "Data/PaintData",
+      // regions in mask colour order (red, green, blue), each with its lightness slider range, like vanilla's
+      "Entries": {
+        "Silo": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+        "{{ModId}}_BigSilo": "Building/-20 5/Roof/-25 0/Trim/-15 0",
+        "{{ModId}}_DeluxeSilo": "Building/-20 5/Roof/-25 0/Trim/-15 0"
+      }
+    }
+  ]
+}

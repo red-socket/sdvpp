@@ -25,7 +25,7 @@ internal sealed class WoodShelter
     public const string ActionId = "Luke.SDVPP_WoodShelter";
 
     /// <summary>The team global inventory holding the stored wood.</summary>
-    private const string InventoryId = "Luke.SDVPP_WoodShelter";
+    internal const string InventoryId = "Luke.SDVPP_WoodShelter";
 
     private readonly IModHelper helper;
     private readonly IMonitor monitor;
@@ -54,12 +54,12 @@ internal sealed class WoodShelter
     }
 
     /// <summary>Whether an item can be stored in the shelter.</summary>
-    private static bool IsWood(Item? item)
+    internal static bool IsWood(Item? item)
     {
         return item?.QualifiedItemId is "(O)388" or "(O)709";
     }
 
-    private static NetMutex GetMutex()
+    internal static NetMutex GetMutex()
     {
         return Game1.player.team.GetOrCreateGlobalInventoryMutex(InventoryId);
     }
@@ -160,7 +160,7 @@ internal sealed class WoodShelter
     }
 
     /// <summary>The shelter's inventory, without creating it (only the host creates it).</summary>
-    private static Inventory? GetInventory()
+    internal static Inventory? GetInventory()
     {
         return Game1.player.team.globalInventories.TryGetValue(InventoryId, out Inventory inventory) ? inventory : null;
     }
