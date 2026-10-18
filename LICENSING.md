@@ -9,6 +9,7 @@ SDV++ is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). T
 - If people use a changed version over a network, you must offer them its source too.
 
 - The silo paint mask (`src/SDVPP.Content/assets/Silo_PaintMask.png`) is SDV++'s own image. It uses flat red, green and blue to mark which part of the silo each paint color changes, and contains no art from the game.
+- The Forest minecart touch-ups (`src/SDVPP.Content/assets/forest-minecart-touchup-*.png`) are pixels drawn for SDV++ to blend the new cave into the cliff. Each file holds only those pixels, and the rest is transparent. The rails at both new minecart stops are made while the game runs, from your own copy of the game.
 
 ## Not covered
 

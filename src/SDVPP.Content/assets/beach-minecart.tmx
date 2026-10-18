@@ -2,22 +2,26 @@
 <!-- Minecart stop for the Beach, patched in at tile (40, 0): a track runs down the east edge of the path from town to
      the cart. The Beach map has no outdoors tilesheet, so this fragment brings the game's own (resolved from
      Content/Maps, not shipped). Tile ids are the vanilla outdoors indices + 1: cart top 933 (Front), cart body and
-     engine 958/1080/1081 (Buildings), and the Quarry cart's rails on a dirt bed, 578 with the 458 bumper on the arrival
-     tile (Back); every rail tile has a ground background, and this one suits sand best. -->
+     engine 958/1080/1081 (Buildings). The rails are on Back2, over the vanilla sand, from z_SDVPP_Rails: a two-tile
+     sheet (straight track, track end) that the C# mod builds at load time from the game's own rail tiles with the
+     dirt and grass made transparent. -->
 <map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="3" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="4">
   <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
     <image source="spring_outdoorsTileSheet" width="400" height="1264" />
   </tileset>
-  <layer id="1" name="Back" width="3" height="8">
+  <tileset firstgid="1976" name="z_SDVPP_Rails" tilewidth="16" tileheight="16" tilecount="2" columns="2">
+    <image source="z_SDVPP_Rails" width="32" height="16" />
+  </tileset>
+  <layer id="1" name="Back2" width="3" height="8">
     <data encoding="csv">
-579,0,0,
-579,0,0,
-579,0,0,
-579,0,0,
-579,0,0,
-579,0,0,
-579,0,0,
-459,0,0
+1976,0,0,
+1976,0,0,
+1976,0,0,
+1976,0,0,
+1976,0,0,
+1976,0,0,
+1976,0,0,
+1977,0,0
 </data>
   </layer>
   <layer id="2" name="Buildings" width="3" height="8">

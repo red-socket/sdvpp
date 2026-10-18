@@ -11,7 +11,7 @@
           "Id": "{{ModId}}_Forest",
           "DisplayName": "{{i18n: minecart.forest}}",
           "TargetLocation": "Forest",
-          "TargetTile": { "X": 75, "Y": 9 },
+          "TargetTile": { "X": 77, "Y": 9 },
           "TargetDirection": "down"
         },
         "{{ModId}}_Beach": {
@@ -24,35 +24,45 @@
       }
     },
     {
+      "LogName": "Forest minecart touch-ups",
+      "Action": "Load",
+      // hand-drawn pixels that blend the cave into the cliff, one strip per season
+      "Target": "Maps/z_SDVPP_ForestTouchup",
+      "FromFile": "assets/forest-minecart-touchup-{{Lowercase: {{Season}}}}.png"
+    },
+    {
       "LogName": "Forest minecart",
       "Action": "EditMap",
       "Target": "Maps/Forest",
-      // grass east of the path from the farm, clear of the large bush at (72-74, 10); the Forest map already has
-      // the outdoors tilesheet. Rails (1076) come out from under the cliff and end in a bumper (1075) on the arrival
-      // tile, like the Bus Stop cart.
+      // the track comes out of a cave in the cliff east of the path from the farm
+      "FromFile": "assets/forest-minecart.tmx",
+      "ToArea": { "X": 75, "Y": 2, "Width": 5, "Height": 8 },
+      "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Forest minecart cave and arrival",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
       "MapTiles": [
-        { "Position": { "X": 75, "Y": 6 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1076 },
-        { "Position": { "X": 75, "Y": 7 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1076 },
-        { "Position": { "X": 75, "Y": 8 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1076 },
-        {
-          "Position": { "X": 75, "Y": 9 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 1075,
-          // keep forage and artifact spots off the arrival tile
-          "SetProperties": { "NoSpawn": "All" }
-        },
-        { "Position": { "X": 75, "Y": 7 }, "Layer": "Front", "SetTilesheet": "outdoors", "SetIndex": 933 },
-        {
-          "Position": { "X": 75, "Y": 8 }, "Layer": "Buildings", "SetTilesheet": "outdoors", "SetIndex": 958,
-          "SetProperties": { "Action": "MinecartTransport Default {{ModId}}_Forest" }
-        },
-        {
-          "Position": { "X": 76, "Y": 8 }, "Layer": "Buildings", "SetTilesheet": "outdoors", "SetIndex": 1080,
-          "SetProperties": { "Action": "MinecartTransport Default {{ModId}}_Forest" }
-        },
-        {
-          "Position": { "X": 77, "Y": 8 }, "Layer": "Buildings", "SetTilesheet": "outdoors", "SetIndex": 1081,
-          "SetProperties": { "Action": "MinecartTransport Default {{ModId}}_Forest" }
-        }
+        // open the cliff where the cave is: the top of the arch is on Front, the floor is walkable
+        { "Position": { "X": 77, "Y": 4 }, "Layer": "Buildings", "Remove": true },
+        { "Position": { "X": 77, "Y": 6 }, "Layer": "Buildings", "Remove": true },
+        // keep forage and artifact spots off the arrival tile
+        { "Position": { "X": 77, "Y": 9 }, "Layer": "Back", "SetProperties": { "NoSpawn": "All" } }
       ]
+    },
+    {
+      "LogName": "Forest minecart in winter",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      // the dirt in front of the cave turns into a square snow patch in winter, so use the plain ground there instead
+      "MapTiles": [
+        { "Position": { "X": 76, "Y": 6 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 407 },
+        { "Position": { "X": 76, "Y": 7 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 404 },
+        { "Position": { "X": 77, "Y": 7 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 407 },
+        { "Position": { "X": 78, "Y": 7 }, "Layer": "Back", "SetTilesheet": "outdoors", "SetIndex": 380 }
+      ],
+      "When": { "Season": "Winter" }
     },
     {
       "LogName": "Beach minecart",
@@ -68,7 +78,9 @@
       "Action": "EditMap",
       "Target": "Maps/Beach",
       "MapTiles": [
-        { "Position": { "X": 40, "Y": 7 }, "Layer": "Back", "SetProperties": { "NoSpawn": "All" } }
+        { "Position": { "X": 40, "Y": 7 }, "Layer": "Back", "SetProperties": { "NoSpawn": "All" } },
+        // the driftwood log at the top of the track
+        { "Position": { "X": 40, "Y": 0 }, "Layer": "Buildings", "Remove": true }
       ]
     }
   ]

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minecart stop for Cindersap Forest, patched in at tile (75, 2): the track comes out of a small cave in the cliff
+     east of the path from the farm, and the cart waits on the grass below. Tile ids are the vanilla outdoors indices
+     + 1 (the game's own sheet, resolved from Content/Maps, not shipped): the cave is the Quarry Mine's arch from the
+     Mountain map, frame 1658/1660/1683/1685/1708/1710 (Buildings) and top 1659 (Front) on rock 217, with the dark
+     509 in the middle (on Buildings, so nobody walks into it), the floor 534 with a grass edge 679 on the left, and
+     a dirt apron with grass edges 704/705/707 (Back). The cave sits where its bottom row follows the diagonal cliff.
+     Rails on grass 1076 with the 1075 end on the arrival tile (Back); on the cave floor and the apron the rails are on
+     Back2 from z_SDVPP_Rails, which the C# mod builds at load time (see the Beach stop). Cart top 933 (Front), cart
+     body and engine 958/1080/1081 (Buildings).
+     Buildings2 has hand-drawn touch-ups that blend the cave into the cliff: z_SDVPP_ForestTouchup is loaded by the
+     content pack from forest-minecart-touchup-<season>.png, so the touch-ups follow the season. -->
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="5" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="4">
+  <tileset firstgid="1" name="outdoors" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+    <image source="spring_outdoorsTileSheet" width="400" height="1264" />
+  </tileset>
+  <tileset firstgid="1976" name="z_SDVPP_Rails" tilewidth="16" tileheight="16" tilecount="2" columns="2">
+    <image source="z_SDVPP_Rails" width="32" height="16" />
+  </tileset>
+  <tileset firstgid="1978" name="z_SDVPP_ForestTouchup" tilewidth="16" tileheight="16" tilecount="16" columns="16">
+    <image source="z_SDVPP_ForestTouchup" width="256" height="16" />
+  </tileset>
+  <layer id="1" name="Back" width="5" height="8">
+    <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,218,218,218,0,
+0,218,510,218,0,
+0,680,535,535,0,
+0,705,706,708,0,
+0,0,1077,0,0,
+0,0,1076,0,0
+</data>
+  </layer>
+  <layer id="2" name="Back2" width="5" height="8">
+    <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,1976,0,0,
+0,0,1976,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+  </layer>
+  <layer id="3" name="Buildings" width="5" height="8">
+    <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,1659,0,1661,0,
+0,1684,510,1686,0,
+0,1709,0,1711,0,
+0,0,0,0,0,
+0,0,959,1081,1082,
+0,0,0,0,0
+</data>
+  </layer>
+  <layer id="4" name="Buildings2" width="5" height="8">
+    <data encoding="csv">
+0,1981,0,0,0,
+0,1982,1987,1988,0,
+1978,1983,0,1989,0,
+1979,1984,0,1990,0,
+1980,1985,0,1991,1993,
+0,1986,0,1992,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+  </layer>
+  <layer id="5" name="Front" width="5" height="8">
+    <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,1660,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,934,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+  </layer>
+  <objectgroup id="6" name="Buildings" visible="false" locked="false">
+    <object id="1" name="TileData" x="32" y="96" width="16" height="16" rotation="0">
+      <properties>
+        <property name="Action" type="string" value="MinecartTransport Default Luke.SDVPP.Content_Forest" />
+      </properties>
+    </object>
+    <object id="2" name="TileData" x="48" y="96" width="16" height="16" rotation="0">
+      <properties>
+        <property name="Action" type="string" value="MinecartTransport Default Luke.SDVPP.Content_Forest" />
+      </properties>
+    </object>
+    <object id="3" name="TileData" x="64" y="96" width="16" height="16" rotation="0">
+      <properties>
+        <property name="Action" type="string" value="MinecartTransport Default Luke.SDVPP.Content_Forest" />
+      </properties>
+    </object>
+  </objectgroup>
+</map>

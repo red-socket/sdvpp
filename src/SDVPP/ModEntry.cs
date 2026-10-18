@@ -30,6 +30,7 @@ internal sealed class ModEntry : Mod
         _ = new AccidentGuards(this.Monitor, () => this.config, harmony);
         _ = new RangePreview(helper, () => this.config);
         _ = new ShelterRobin(helper, this.Monitor, () => this.config, harmony);
+        _ = new RailTiles(helper, this.Monitor);
 
         helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
     }
