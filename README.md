@@ -27,6 +27,7 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 - Craft a Quality Sprinkler from a Sprinkler (Farming 6), and an Iridium Sprinkler from a Quality Sprinkler (Farming 9). (`SprinklerUpgradeRecipes`, content pack)
 - Robin can upgrade a Silo to a Big Silo that holds 500 hay, then to a Deluxe Silo that holds 750. (`SiloUpgrades`, content pack)
 - A sprinkler that reaches the pet bowl's water fills it every morning. (`SprinklersFillPetBowl`, host's setting)
+- Sprinklers water the garden pots in their range every morning, like tilled soil. (`SprinklersWaterGardenPots`, host's setting)
 - You can refill your watering can at the Pelican Town fountain, except in winter. (`FountainWater`, content pack)
 - When you hold or place a sprinkler, scarecrow, bee house or Junimo hut, or point at one, SDV++ highlights the tiles it covers. (`RangePreview`)
 

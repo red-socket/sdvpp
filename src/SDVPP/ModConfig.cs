@@ -8,6 +8,9 @@ internal sealed class ModConfig
     /// <summary>Sprinklers that cover the pet bowl's water tile fill it each morning. Uses the host's setting.</summary>
     public bool SprinklersFillPetBowl { get; set; } = true;
 
+    /// <summary>Sprinklers water the garden pots in their range each morning. Uses the host's setting.</summary>
+    public bool SprinklersWaterGardenPots { get; set; } = true;
+
     /// <summary>Ask before a warp totem warps you. Each player's own setting applies.</summary>
     public bool ConfirmWarpTotems { get; set; } = true;
 

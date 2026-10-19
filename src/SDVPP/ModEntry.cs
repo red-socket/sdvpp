@@ -17,6 +17,7 @@ internal sealed class ModEntry : Mod
 
         var harmony = new Harmony(this.ModManifest.UniqueID);
         _ = new PetBowlSprinklers(helper, this.Monitor, () => this.config);
+        _ = new GardenPotSprinklers(helper, this.Monitor, () => this.config);
         _ = new WarpConfirm(helper, this.Monitor, () => this.config, harmony);
         _ = new DecorTimeFreeze(helper, this.Monitor, () => this.config);
         _ = new WeddingReminder(helper, this.Monitor, () => this.config);
@@ -61,6 +62,13 @@ internal sealed class ModEntry : Mod
             setValue: value => this.config.SprinklersFillPetBowl = value,
             name: () => t.Get("config.SprinklersFillPetBowl.name"),
             tooltip: () => t.Get("config.SprinklersFillPetBowl.tooltip")
+        );
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.SprinklersWaterGardenPots,
+            setValue: value => this.config.SprinklersWaterGardenPots = value,
+            name: () => t.Get("config.SprinklersWaterGardenPots.name"),
+            tooltip: () => t.Get("config.SprinklersWaterGardenPots.tooltip")
         );
         gmcm.AddBoolOption(
             this.ModManifest,

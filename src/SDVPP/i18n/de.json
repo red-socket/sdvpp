@@ -3,6 +3,8 @@
 
   "config.SprinklersFillPetBowl.name": "Sprinkler füllen die Haustier-Schüssel",
   "config.SprinklersFillPetBowl.tooltip": "Jeden Morgen füllt ein Sprinkler, der das Wasser der Haustier-Schüssel erreicht, sie auf. Im Koop-Modus gilt die Einstellung des Hosts.",
+  "config.SprinklersWaterGardenPots.name": "Sprinkler gießen Gartentöpfe",
+  "config.SprinklersWaterGardenPots.tooltip": "Jeden Morgen gießen Sprinkler die Gartentöpfe in ihrer Reichweite. Im Koop-Modus gilt die Einstellung des Hosts.",
 
   "config.ConfirmWarpTotems.name": "Teleport-Totems bestätigen",
   "config.ConfirmWarpTotems.tooltip": "Fragt nach, bevor ein Teleport-Totem dich woanders hinbringt.",

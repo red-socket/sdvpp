@@ -3,6 +3,8 @@
 
   "config.SprinklersFillPetBowl.name": "Les arroseurs remplissent la gamelle",
   "config.SprinklersFillPetBowl.tooltip": "Chaque matin, un arroseur qui atteint l'eau de la gamelle de l'animal de compagnie la remplit. En coop, c'est le réglage de l'hôte qui compte.",
+  "config.SprinklersWaterGardenPots.name": "Les arroseurs arrosent les pots de jardin",
+  "config.SprinklersWaterGardenPots.tooltip": "Chaque matin, les arroseurs arrosent les pots de jardin à leur portée. En coop, c'est le réglage de l'hôte qui compte.",
 
   "config.ConfirmWarpTotems.name": "Confirmer les totems de téléportation",
   "config.ConfirmWarpTotems.tooltip": "Demande avant qu'un totem de téléportation vous emmène ailleurs.",

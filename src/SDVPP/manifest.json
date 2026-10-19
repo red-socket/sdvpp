@@ -2,7 +2,7 @@
   "$schema": "https://smapi.io/schemas/manifest.json",
   "Name": "SDV++",
   "Author": "Luke",
-  "Version": "0.5.2",
+  "Version": "0.5.3",
   "Description": "Quality-of-life improvements for Stardew Valley.",
   "UniqueID": "Luke.SDVPP",
   "EntryDll": "SDVPP.dll",

@@ -3,6 +3,8 @@
 
   "config.SprinklersFillPetBowl.name": "Los aspersores llenan el cuenco de la mascota",
   "config.SprinklersFillPetBowl.tooltip": "Cada mañana, un aspersor que alcanza el agua del cuenco de la mascota lo llena. En cooperativo se usa la opción del anfitrión.",
+  "config.SprinklersWaterGardenPots.name": "Los aspersores riegan las macetas",
+  "config.SprinklersWaterGardenPots.tooltip": "Cada mañana, los aspersores riegan las macetas que tienen a su alcance. En cooperativo se usa la opción del anfitrión.",
 
   "config.ConfirmWarpTotems.name": "Confirmar tótems de viaje",
   "config.ConfirmWarpTotems.tooltip": "Pregunta antes de que un tótem de viaje te lleve a otro sitio.",

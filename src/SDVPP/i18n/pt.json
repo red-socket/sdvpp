@@ -3,6 +3,8 @@
 
   "config.SprinklersFillPetBowl.name": "Aspersores enchem a tigela do animal",
   "config.SprinklersFillPetBowl.tooltip": "Toda manhã, um aspersor que alcança a água da tigela do animal de estimação a enche. No cooperativo, vale a configuração do anfitrião.",
+  "config.SprinklersWaterGardenPots.name": "Aspersores regam vasos de jardim",
+  "config.SprinklersWaterGardenPots.tooltip": "Toda manhã, os aspersores regam os vasos de jardim ao seu alcance. No cooperativo, vale a configuração do anfitrião.",
 
   "config.ConfirmWarpTotems.name": "Confirmar totens de teletransporte",
   "config.ConfirmWarpTotems.tooltip": "Pergunta antes que um totem de teletransporte leve você embora.",

@@ -3,6 +3,8 @@
 
   "config.SprinklersFillPetBowl.name": "Sprinklers fill the pet bowl",
   "config.SprinklersFillPetBowl.tooltip": "Each morning, a sprinkler that reaches the pet bowl's water fills it. In co-op, the host's setting applies.",
+  "config.SprinklersWaterGardenPots.name": "Sprinklers water garden pots",
+  "config.SprinklersWaterGardenPots.tooltip": "Each morning, sprinklers water the garden pots in their range. In co-op, the host's setting applies.",
 
   "config.ConfirmWarpTotems.name": "Confirm warp totems",
   "config.ConfirmWarpTotems.tooltip": "Ask before a warp totem sends you away.",
