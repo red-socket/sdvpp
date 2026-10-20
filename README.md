@@ -6,7 +6,7 @@ SDV++ is a mod for Stardew Valley 1.6 that adds quality-of-life changes. It work
 
 ## Requirements
 
-- Stardew Valley 1.6.15
+- Stardew Valley 1.6.15 on PC (Windows, macOS, Linux or Steam Deck). Android may work with the Android port of SMAPI, but it isn't tested, and some features might not work there.
 - [SMAPI](https://smapi.io) 4.0 or later
 - [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) 2.0 or later
 - [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098), optional, to change settings in game

@@ -2,11 +2,14 @@
   "$schema": "https://smapi.io/schemas/manifest.json",
   "Name": "SDV++ (Content)",
   "Author": "Luke",
-  "Version": "0.5.3",
+  "Version": "0.5.4",
   "Description": "Data and map changes for SDV++.",
   "UniqueID": "Luke.SDVPP.Content",
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
+  "Dependencies": [
+    { "UniqueID": "Luke.SDVPP", "IsRequired": true }
+  ],
   "UpdateKeys": []
 }

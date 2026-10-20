@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using System.Reflection;
+using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
@@ -25,6 +27,9 @@ internal sealed class RangePreview
     /// <summary>The game's green placement tile.</summary>
     private static readonly Rectangle TileSprite = new(194, 388, 16, 16);
 
+    /// <summary>The build menu's current action (build, move...). Read by name, because the Android version of the game has no such field and a direct reference would stop the whole mod from loading there.</summary>
+    private static readonly FieldInfo? CarpenterActionField = AccessTools.Field(typeof(CarpenterMenu), "Action");
+
     private readonly Func<ModConfig> config;
 
     /// <summary>Tile offsets per shape, built once.</summary>
@@ -46,7 +51,7 @@ internal sealed class RangePreview
         // placing a Junimo hut from the Wizard's book
         if (Game1.activeClickableMenu is CarpenterMenu { onFarm: true, freeze: false } carpenter)
         {
-            Building? hut = carpenter.Action switch
+            Building? hut = CarpenterActionField?.GetValue(carpenter) switch
             {
                 CarpenterMenu.CarpentryAction.None => carpenter.currentBuilding,
                 CarpenterMenu.CarpentryAction.Move => carpenter.buildingToMove,
