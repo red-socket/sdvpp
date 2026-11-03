@@ -1,7 +1,4 @@
 {
-  "config.NextSeasonSeeds.name": "Semillas de la próxima estación el día 28",
-  "config.NextSeasonSeeds.description": "El último día de la primavera, el verano y el otoño, Pierre y MercaJoja también venden las semillas de la próxima estación.",
-
   "config.SprinklerUpgradeRecipes.name": "Recetas para mejorar aspersores",
   "config.SprinklerUpgradeRecipes.description": "Fabrica un aspersor de calidad a partir de un aspersor, y un aspersor de iridio a partir de un aspersor de calidad. Nota: cada receta que conoces cuenta para Maestro artesano y para la perfección.",
   "recipe.qualitySprinklerUpgrade": "Aspersor de calidad (mejora)",

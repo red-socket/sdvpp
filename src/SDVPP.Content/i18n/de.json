@@ -1,7 +1,4 @@
 {
-  "config.NextSeasonSeeds.name": "Samen der nächsten Jahreszeit am 28.",
-  "config.NextSeasonSeeds.description": "Am letzten Tag von Frühling, Sommer und Herbst verkaufen Pierre und der Joja-Markt auch die Samen der nächsten Jahreszeit.",
-
   "config.SprinklerUpgradeRecipes.name": "Rezepte zum Aufwerten von Sprinklern",
   "config.SprinklerUpgradeRecipes.description": "Stelle einen Qualitätssprinkler aus einem Sprinkler her und einen Iridium-Sprinkler aus einem Qualitätssprinkler. Hinweis: Jedes Rezept, das du kennst, zählt für Handwerksmeister und für die Perfektion.",
   "recipe.qualitySprinklerUpgrade": "Qualitätssprinkler (Aufwertung)",

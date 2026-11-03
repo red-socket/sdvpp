@@ -23,7 +23,7 @@ Every feature can be turned off. Settings are in `Mods/SDVPP/config.json`, or in
 
 ### Farming and shops
 
-- On the last day of spring, summer and fall, Pierre and JojaMart also sell next season's seeds. (`NextSeasonSeeds`, content pack)
+- On the last day of each season, Pierre and JojaMart also sell next season's seeds. If another mod changes their shops, SDV++ adds the sale to whatever seeds they stock. (`NextSeasonSeeds`)
 - Craft a Quality Sprinkler from a Sprinkler (Farming 6), and an Iridium Sprinkler from a Quality Sprinkler (Farming 9). (`SprinklerUpgradeRecipes`, content pack)
 - Robin can upgrade a Silo to a Big Silo that holds 500 hay, then to a Deluxe Silo that holds 750. (`SiloUpgrades`, content pack)
 - A sprinkler that reaches the pet bowl's water fills it every morning. (`SprinklersFillPetBowl`, host's setting)

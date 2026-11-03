@@ -1,7 +1,4 @@
 {
-  "config.NextSeasonSeeds.name": "Next season's seeds on day 28",
-  "config.NextSeasonSeeds.description": "On the last day of spring, summer and fall, Pierre and JojaMart also sell the next season's seeds.",
-
   "config.SprinklerUpgradeRecipes.name": "Sprinkler upgrade recipes",
   "config.SprinklerUpgradeRecipes.description": "Craft a Quality Sprinkler from a Sprinkler, and an Iridium Sprinkler from a Quality Sprinkler. Note: each recipe you know counts toward Craft Master and Perfection.",
   "recipe.qualitySprinklerUpgrade": "Quality Sprinkler (Upgrade)",

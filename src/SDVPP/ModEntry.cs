@@ -16,6 +16,7 @@ internal sealed class ModEntry : Mod
         this.config = helper.ReadConfig<ModConfig>();
 
         var harmony = new Harmony(this.ModManifest.UniqueID);
+        _ = new NextSeasonSeeds(helper, this.Monitor, () => this.config);
         _ = new PetBowlSprinklers(helper, this.Monitor, () => this.config);
         _ = new GardenPotSprinklers(helper, this.Monitor, () => this.config);
         _ = new WarpConfirm(helper, this.Monitor, () => this.config, harmony);
@@ -54,9 +55,21 @@ internal sealed class ModEntry : Mod
         gmcm.Register(
             this.ModManifest,
             reset: () => this.config = new ModConfig(),
-            save: () => this.Helper.WriteConfig(this.config)
+            save: () =>
+            {
+                this.Helper.WriteConfig(this.config);
+                // shop stock is data, so reload it for NextSeasonSeeds
+                this.Helper.GameContent.InvalidateCache("Data/Shops");
+            }
         );
 
+        gmcm.AddBoolOption(
+            this.ModManifest,
+            getValue: () => this.config.NextSeasonSeeds,
+            setValue: value => this.config.NextSeasonSeeds = value,
+            name: () => t.Get("config.NextSeasonSeeds.name"),
+            tooltip: () => t.Get("config.NextSeasonSeeds.tooltip")
+        );
         gmcm.AddBoolOption(
             this.ModManifest,
             getValue: () => this.config.SprinklersFillPetBowl,

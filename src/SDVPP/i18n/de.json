@@ -1,6 +1,9 @@
 {
   "loaded": "SDV++ geladen.",
 
+  "config.NextSeasonSeeds.name": "Samen der nächsten Jahreszeit am 28.",
+  "config.NextSeasonSeeds.tooltip": "Am letzten Tag jeder Jahreszeit verkaufen Pierre und der Joja-Markt auch die Samen der nächsten Jahreszeit.",
+
   "config.SprinklersFillPetBowl.name": "Sprinkler füllen die Haustier-Schüssel",
   "config.SprinklersFillPetBowl.tooltip": "Jeden Morgen füllt ein Sprinkler, der das Wasser der Haustier-Schüssel erreicht, sie auf. Im Koop-Modus gilt die Einstellung des Hosts.",
   "config.SprinklersWaterGardenPots.name": "Sprinkler gießen Gartentöpfe",

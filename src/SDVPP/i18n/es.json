@@ -1,6 +1,9 @@
 {
   "loaded": "SDV++ cargado.",
 
+  "config.NextSeasonSeeds.name": "Semillas de la próxima estación el día 28",
+  "config.NextSeasonSeeds.tooltip": "El último día de cada estación, Pierre y MercaJoja también venden las semillas de la próxima estación.",
+
   "config.SprinklersFillPetBowl.name": "Los aspersores llenan el cuenco de la mascota",
   "config.SprinklersFillPetBowl.tooltip": "Cada mañana, un aspersor que alcanza el agua del cuenco de la mascota lo llena. En cooperativo se usa la opción del anfitrión.",
   "config.SprinklersWaterGardenPots.name": "Los aspersores riegan las macetas",

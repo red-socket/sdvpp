@@ -2,10 +2,6 @@
   "$schema": "https://smapi.io/schemas/content-patcher.json",
   "Format": "2.0.0",
   "ConfigSchema": {
-    "NextSeasonSeeds": {
-      "AllowValues": "true, false",
-      "Default": "true"
-    },
     "SprinklerUpgradeRecipes": {
       "AllowValues": "true, false",
       "Default": "true"
@@ -42,12 +38,6 @@
       "LogName": "Wood shelter action",
       "Action": "Include",
       "FromFile": "data/woodshelter.json"
-    },
-    {
-      "LogName": "Next season's seeds on day 28",
-      "Action": "Include",
-      "FromFile": "data/seeds.json",
-      "When": { "NextSeasonSeeds": true }
     },
     {
       "LogName": "Sprinkler upgrade recipes",

@@ -5,6 +5,9 @@ namespace SDVPP;
 /// <summary>Player settings, saved in the mod's <c>config.json</c>. Each feature has its own toggle.</summary>
 internal sealed class ModConfig
 {
+    /// <summary>On the last day of a season, Pierre and JojaMart also sell the next season's seeds. Each player's own setting applies.</summary>
+    public bool NextSeasonSeeds { get; set; } = true;
+
     /// <summary>Sprinklers that cover the pet bowl's water tile fill it each morning. Uses the host's setting.</summary>
     public bool SprinklersFillPetBowl { get; set; } = true;
 

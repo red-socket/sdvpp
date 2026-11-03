@@ -1,7 +1,4 @@
 {
-  "config.NextSeasonSeeds.name": "Graines de la saison suivante le 28",
-  "config.NextSeasonSeeds.description": "Le dernier jour du printemps, de l'été et de l'automne, Pierre et le Marché Joja vendent aussi les graines de la saison suivante.",
-
   "config.SprinklerUpgradeRecipes.name": "Recettes d'amélioration d'arroseur",
   "config.SprinklerUpgradeRecipes.description": "Fabriquez un arroseur de qualité à partir d'un arroseur, et un arroseur en iridium à partir d'un arroseur de qualité. Remarque : chaque recette connue compte pour Maître artisan et pour la perfection.",
   "recipe.qualitySprinklerUpgrade": "Arroseur de qualité (amélioration)",
