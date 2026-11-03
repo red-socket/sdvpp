@@ -32,6 +32,7 @@ internal sealed class ModEntry : Mod
         _ = new RangePreview(helper, () => this.config);
         _ = new ShelterRobin(helper, this.Monitor, () => this.config, harmony);
         _ = new RailTiles(helper, this.Monitor);
+        _ = new SprinklerRecipeOrder(helper);
 
         helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
     }

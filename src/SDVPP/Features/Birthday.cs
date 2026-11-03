@@ -42,6 +42,9 @@ internal sealed class Birthday
 
     private static readonly string[] Seasons = { "spring", "summer", "fall", "winter" };
 
+    /// <summary>Days of the week on the first page of the day question; the rest are on the second.</summary>
+    private const int DaysOnFirstPage = 4;
+
     /// <summary>Harmony patches are static, so they reach the feature through this.</summary>
     private static Birthday? instance;
 
@@ -194,15 +197,30 @@ internal sealed class Birthday
         });
     }
 
-    private void AskDay(string season, int week)
+    /// <summary>Ask for the day in two pages (days 1-4 and 5-7 of the week), so no question has more than five answers.</summary>
+    /// <remarks>A question box grows upward with each answer; with all seven days and Back it ran off the top of short screens (phones, the Steam Deck, high UI scales).</remarks>
+    private void AskDay(string season, int week, bool secondPage = false)
     {
-        var responses = Enumerable.Range(week * 7 + 1, 7)
+        int weekStart = week * 7 + 1;
+        int first = secondPage ? weekStart + DaysOnFirstPage : weekStart;
+        int count = secondPage ? 7 - DaysOnFirstPage : DaysOnFirstPage;
+
+        var responses = Enumerable.Range(first, count)
             .Select(day => new Response(day.ToString(), this.helper.Translation.Get("birthday.dayOption", new { weekday = Game1.shortDayDisplayNameFromDayOfSeason(day), day })))
-            .Append(new Response("back", this.helper.Translation.Get("birthday.back")))
-            .ToArray();
-        this.Ask(this.helper.Translation.Get("birthday.askDay"), responses, answer =>
+            .ToList();
+        if (secondPage)
         {
-            if (answer == "back")
+            responses.Add(new Response("otherPage", this.helper.Translation.Get("birthday.week", new { from = weekStart, to = first - 1 })));
+            responses.Add(new Response("back", this.helper.Translation.Get("birthday.back")));
+        }
+        else
+            responses.Add(new Response("otherPage", this.helper.Translation.Get("birthday.week", new { from = first + count, to = weekStart + 6 })));
+
+        this.Ask(this.helper.Translation.Get("birthday.askDay"), responses.ToArray(), answer =>
+        {
+            if (answer == "otherPage")
+                this.AskDay(season, week, !secondPage);
+            else if (answer == "back")
                 this.AskWeek(season);
             else
                 this.Confirm(season, int.Parse(answer));
