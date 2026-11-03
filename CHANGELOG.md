@@ -2,7 +2,7 @@
 
 All notable changes to SDV++ are listed here. Versions apply to both the mod and its content pack.
 
-## Unreleased
+## 0.5.6 (2026-11-03)
 
 - Fixed: the birthday day question ran off the top of short screens, such as phones, the Steam Deck or a large UI scale, so you couldn't pick a day. Each week's days now come in two pages, and no question has more than five answers.
 - The sprinkler upgrade recipes now sit right after the Quality and Iridium Sprinkler in the crafting menu, instead of at the end of the last page.
