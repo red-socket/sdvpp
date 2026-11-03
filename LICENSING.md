@@ -15,6 +15,7 @@ SDV++ is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). T
 
 - Stardew Valley belongs to ConcernedApe, including its code, art, music, text and trademarks. SDV++ doesn't include any of it and grants no rights to it.
 - The screenshots in `media/` show Stardew Valley with SDV++ installed. The game's art in them belongs to ConcernedApe.
+- The banner, icon, thumbnail and feature images in `media/` are put together from the game's own maps, sprites, menus and fonts. That art belongs to ConcernedApe too.
 - SMAPI, Content Patcher, Harmony and ModBuildConfig keep their own licenses.
 
 This is a summary, not legal advice. The license text in `LICENSE` is what counts.
