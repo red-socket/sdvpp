@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AssemblyName>SDVPP</AssemblyName>
     <RootNamespace>SDVPP</RootNamespace>
-    <Version>0.5.6</Version>
+    <Version>0.5.7</Version>
     <TargetFramework>net6.0</TargetFramework>
     <EnableHarmony>true</EnableHarmony>
     <Nullable>enable</Nullable>

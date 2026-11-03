@@ -2,7 +2,7 @@
 
 All notable changes to SDV++ are listed here. Versions apply to both the mod and its content pack.
 
-## Unreleased
+## 0.5.7 (2026-11-03)
 
 - Fixed: with a mod that changes JojaMart's shop, such as Stardew Valley Expanded, SMAPI showed a warning for every seed SDV++ couldn't find. SDV++ now adds the day-28 sale to whatever seeds Pierre and JojaMart stock, and skips the rest without a warning.
 - The `NextSeasonSeeds` setting moved from `Mods/SDVPP.Content/config.json` to `Mods/SDVPP/config.json`, and Generic Mod Config Menu shows it with the other SDV++ settings. If you had turned it off, turn it off again in its new place.
